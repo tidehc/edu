@@ -48,26 +48,6 @@ public class TeacherAdminController {
         return R.ok();
     }
 
-    @ApiOperation(value = "分页讲师列表")
-    @GetMapping("/{page}/{limit}")
-    public R pageList(
-            @ApiParam(name="page",value = "当前页码",required = true)
-            @PathVariable(value = "page") Long page,
-            @ApiParam(name="limit",value = "每页记录数",required = true)
-            @PathVariable(value = "limit") Long limit){
-
-        if(page<=0||limit<=0){
-            throw new CustomizeException(ResultCodeEnum.PARAM_ERROR);
-        }
-
-        Page<Teacher> teacherPage = new Page<>(page,limit);
-        teacherService.page(teacherPage, null);
-        //分页列表
-        List<Teacher> records = teacherPage.getRecords();
-        long total = teacherPage.getTotal();
-
-        return R.ok().data("total",total).data("rows",records);
-    }
 
     @ApiOperation(value = "可以带条件查询的分页讲师列表")
     @GetMapping("/{page}/{limit}")

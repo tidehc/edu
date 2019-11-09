@@ -28,3 +28,7 @@ spring:
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #mybatis日志
+
+logging:
+  level:
+    root: WARN #日志级别
