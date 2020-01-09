@@ -6,6 +6,8 @@
       <module fileurl="file://$PROJECT_DIR$/framework-common/framework-common.iml" filepath="$PROJECT_DIR$/framework-common/framework-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework-parent/framework-parent.iml" filepath="$PROJECT_DIR$/framework-parent/framework-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-edu/microservice-edu.iml" filepath="$PROJECT_DIR$/microservice-edu/microservice-edu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-oss/microservice-oss.iml" filepath="$PROJECT_DIR$/microservice-oss/microservice-oss.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-sysuser/microservice-sysuser.iml" filepath="$PROJECT_DIR$/microservice-sysuser/microservice-sysuser.iml" />
     </modules>
   </component>
 </project>

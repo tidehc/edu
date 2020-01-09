@@ -2,7 +2,9 @@ package com.lyb.common.handler;
 
 import com.lyb.common.constants.ResultCodeEnum;
 import com.lyb.common.exception.CustomizeException;
+import com.lyb.common.util.ExceptionUtil;
 import com.lyb.common.vo.R;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.json.JsonParseException;
 import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.jdbc.BadSqlGrammarException;
@@ -16,6 +18,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * 全局统一异常处理类
  */
 @ControllerAdvice
+@Slf4j
 public class GlobalExceptionHandler {
 
     /**
@@ -24,7 +27,9 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(Exception.class)
     @ResponseBody
     public R error(Exception e){
-        e.printStackTrace();
+        //e.printStackTrace();
+        //log.error(e.getMessage());
+        log.error(ExceptionUtil.getMessage(e));
         return R.error();
     }
 
@@ -34,7 +39,9 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(CustomizeException.class)
     @ResponseBody
     public R error(CustomizeException e){
-        e.printStackTrace();
+        //e.printStackTrace();
+        //log.error(e.getMessage());
+        log.error(ExceptionUtil.getMessage(e));
         return R.error().message(e.getMessage()).code(e.getCode());
     }
 
@@ -44,7 +51,9 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(BadSqlGrammarException.class)
     @ResponseBody
     public R error(BadSqlGrammarException e){
-        e.printStackTrace();
+        //e.printStackTrace();
+        //log.error(e.getMessage());
+        log.error(ExceptionUtil.getMessage(e));
         return R.setResult(ResultCodeEnum.BAD_SQL_GRAMMAR);
     }
 
@@ -52,7 +61,9 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(HttpMessageNotReadableException.class)
     @ResponseBody
     public R error(JsonParseException e){
-        e.printStackTrace();
+        //e.printStackTrace();
+        //log.error(e.getMessage());
+        log.error(ExceptionUtil.getMessage(e));
         return R.setResult(ResultCodeEnum.JSON_PARSE_ERROR);
 
     }

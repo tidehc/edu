@@ -36,7 +36,7 @@ public class Teacher implements Serializable {
     @TableId(value = "id", type = IdType.ID_WORKER_STR)
     private String id;
 
-    @ApiModelProperty(value = "讲师姓名")
+    @ApiModelProperty(value = " ")
     private String name;
 
     @ApiModelProperty(value = "讲师资历,一句话说明讲师")

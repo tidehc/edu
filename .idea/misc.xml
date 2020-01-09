@@ -9,6 +9,8 @@
         <option value="$PROJECT_DIR$/framework-parent/pom.xml" />
         <option value="$PROJECT_DIR$/framework-common/pom.xml" />
         <option value="$PROJECT_DIR$/microservice-edu/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice-sysuser/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice-oss/pom.xml" />
       </list>
     </option>
   </component>

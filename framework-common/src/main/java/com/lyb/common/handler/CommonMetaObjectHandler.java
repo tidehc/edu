@@ -16,13 +16,18 @@ import java.util.Date;
 @Slf4j
 public class CommonMetaObjectHandler implements MetaObjectHandler {
 
-
+    /**
+     * 插入数据时进行自动填充
+     */
     @Override
     public void insertFill(MetaObject metaObject) {
         this.setFieldValByName("gmtCreate", new Date(), metaObject);
         this.setFieldValByName("gmtModified", new Date(), metaObject);
     }
 
+    /**
+     * 更新数据时进行自动填充
+     */
     @Override
     public void updateFill(MetaObject metaObject) {
         this.setFieldValByName("gmtModified", new Date(), metaObject);
