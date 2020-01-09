@@ -22,4 +22,5 @@ public interface SubjectService extends IService<Subject> {
 
     List<SubjectVo> getNestedSubjectList();
 
+    boolean deleteById(String id);
 }

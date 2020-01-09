@@ -58,4 +58,13 @@ public class SubjectAdminController {
         List<SubjectVo> subjectVoList = subjectService.getNestedSubjectList();
         return R.ok().data("items",subjectVoList);
     }
+
+    @ApiOperation(value = "通过课程分类id删除课程分类")
+    @DeleteMapping("/{id}")
+    public R deleteSubjectById(
+            @ApiParam(name = "id",value = "课程分类id",required = true)
+            @PathVariable("id") String id){
+        boolean b = subjectService.deleteById(id);
+        return b?R.ok():R.error();
+    }
 }

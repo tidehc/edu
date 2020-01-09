@@ -155,6 +155,29 @@ public class SubjectServiceImpl extends ServiceImpl<SubjectMapper, Subject> impl
     }
 
     /**
+     * 根据ID删除课程分类
+     * @param id 课程分类ID
+     * @return 是否删除成功
+     */
+    @Override
+    public boolean deleteById(String id) {
+
+        //根据ID查看数据库中是否存在此ID为parent_id(存在二级分类)
+        QueryWrapper<Subject> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("parent_id", id);
+        List<Subject> subjects = baseMapper.selectList(queryWrapper);
+
+        //如果有则不能删除，返回false
+        if(subjects.size()!=0){
+            return false;
+        }
+        //如果没有则删除并返回true
+        int i = baseMapper.deleteById(id);
+
+        return i==1;
+    }
+
+    /**
      * 根据title查找一级Subject
      */
     private Subject getSubjectByTitle(String title){
