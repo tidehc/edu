@@ -3,6 +3,7 @@ package com.lyb.edu.controller.admin;
 import com.lyb.common.constants.ResultCodeEnum;
 import com.lyb.common.exception.CustomizeException;
 import com.lyb.common.vo.R;
+import com.lyb.edu.entity.Subject;
 import com.lyb.edu.service.SubjectService;
 import com.lyb.edu.vo.SubjectVo;
 import io.swagger.annotations.Api;
@@ -66,5 +67,19 @@ public class SubjectAdminController {
             @PathVariable("id") String id){
         boolean b = subjectService.deleteById(id);
         return b?R.ok():R.error();
+    }
+
+    @ApiOperation(value = "添加一级课程分类")
+    @PostMapping("/levelOne")
+    public R saveLevelOneSubject(@RequestBody Subject subject){
+        Boolean isSuccess = subjectService.saveLevelOneSubject(subject);
+        return isSuccess?R.ok():R.error();
+    }
+
+    @ApiOperation(value = "添加二级课程分类")
+    @PostMapping("/levelTwo")
+    public R saveLevelTwoSubject(@RequestBody Subject subject){
+        Boolean isSuccess = subjectService.saveLevelTwoSubject(subject);
+        return isSuccess?R.ok():R.error();
     }
 }

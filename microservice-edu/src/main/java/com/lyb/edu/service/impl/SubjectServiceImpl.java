@@ -1,8 +1,11 @@
 package com.lyb.edu.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.lyb.common.util.ExcelImportUtil;
 import com.lyb.edu.entity.Subject;
+import com.lyb.edu.entity.Teacher;
 import com.lyb.edu.mapper.SubjectMapper;
 import com.lyb.edu.service.SubjectService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -178,6 +181,58 @@ public class SubjectServiceImpl extends ServiceImpl<SubjectMapper, Subject> impl
     }
 
     /**
+     * 添加一级课程分类
+     * @param subject 需要添加课程分类对象
+     * @return 是否添加成功
+     */
+    @Override
+    public Boolean saveLevelOneSubject(Subject subject) {
+
+        String title = subject.getTitle();
+        //标题不能为空
+        if(title==null||title.equals("")){
+            return false;
+        }
+        //判断该一级分类是否已存在
+        Subject lastSubject = this.getSubjectByTitle(title);
+        //如果存在，返回false
+        if(lastSubject!=null){
+            return false;
+        }
+        //如果不存在则保存到数据库并返回true
+        subject.setSort(selectLastSortOfLevelOneSubject()+1);
+        int i = baseMapper.insert(subject);
+
+        return i==1;
+    }
+
+    /**
+     * 添加二级课程分类
+     * @param subject 需要添加课程分类对象
+     * @return 是否添加成功
+     */
+    @Override
+    public Boolean saveLevelTwoSubject(Subject subject) {
+        String title = subject.getTitle();
+        String parentId = subject.getParentId();
+        //标题不能为空
+        if(title==null||title.equals("")){
+            return false;
+        }
+        //判断该二级分类是否已存在
+        Subject lastSubject = this.getSubjectByTitle(title,parentId);
+        //如果存在，返回false
+        if(lastSubject!=null){
+            return false;
+        }
+        //如果不存在则保存到数据库并返回true
+        subject.setSort(selectLastSortOfLevelTwoSubject(parentId));
+        int i = baseMapper.insert(subject);
+
+        return i==1;
+    }
+
+    /**
      * 根据title查找一级Subject
      */
     private Subject getSubjectByTitle(String title){
@@ -195,5 +250,36 @@ public class SubjectServiceImpl extends ServiceImpl<SubjectMapper, Subject> impl
         queryWrapper.eq("title",title);
         queryWrapper.eq("parent_id", parent_id);
         return baseMapper.selectOne(queryWrapper);
+    }
+
+    /**
+     * 查询当前一级课程分类的最新排序号
+     */
+    private int selectLastSortOfLevelOneSubject(){
+        QueryWrapper<Subject> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("parent_id", "0");
+        queryWrapper.orderByDesc("sort");
+        Page<Subject> pageParam = new Page<>(1,1);
+        return baseMapper.selectPage(pageParam,queryWrapper).getRecords().get(0).getSort();
+    }
+
+    /**
+     * 查询指定一级分类课程下二级分类的最新排号,返回当前添加的二级分类应该使用的序号
+     */
+    private int selectLastSortOfLevelTwoSubject(String parent_id){
+        //查找指定parent_id的二级分类数据
+        QueryWrapper<Subject> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("parent_id", parent_id);
+        queryWrapper.orderByDesc("sort");
+        Page<Subject> pageParam = new Page<>(1,1);
+        List<Subject> records = baseMapper.selectPage(pageParam, queryWrapper).getRecords();
+        //如果二级分类数据为0，则当前二级分类排序序号为对应的一级分类的排序序号
+        if(records.size()==0){
+            QueryWrapper<Subject> queryWrapper2 = new QueryWrapper<>();
+            queryWrapper2.eq("id", parent_id);
+            return baseMapper.selectOne(queryWrapper2).getSort();
+        }else{//如果指定一级分类存在二级分类，则当前二级分类排序序号为最新二级分类排序序号+1
+            return records.get(0).getSort()+1;
+        }
     }
 }
