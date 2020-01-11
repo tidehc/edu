@@ -22,9 +22,9 @@ public class CourseAdminController {
     @Autowired
     CourseService courseService;
 
-    @ApiOperation(value = "添加课程，保存基本信息")
+    @ApiOperation(value = "保存课程基本信息和描述,返回课程信息的ID")
     @PostMapping("/info")
-    public R saveCourse(
+    public R saveCourseInfo(
             @ApiParam(name = "courseVo", value = "课程基本信息", required = true)
             @RequestBody CourseVo courseVo){
         //保存课程基本信息,获取课程的ID
@@ -32,4 +32,23 @@ public class CourseAdminController {
         return R.ok().data("id", courseId);
     }
 
+    @ApiOperation(value = "通过课程ID获取课程基本信息和描述")
+    @GetMapping("/info/{id}")
+    public R getCourseInfoById(
+            @ApiParam(name = "id",value = "课程ID",required = true)
+            @PathVariable(value = "id") String id){
+
+        CourseVo courseVo = courseService.getCourseVoById(id);
+        return R.ok().data("courseInfo",courseVo);
+    }
+
+    @ApiOperation(value = "保存课程基本信息的修改")
+    @PutMapping("/info")
+    public R updateCourseInfo(
+            @ApiParam(name = "courseVo", value = "课程基本信息", required = true)
+            @RequestBody CourseVo courseVo){
+        //保存课程基本信息的修改
+        boolean flag = courseService.updateCourseInfo(courseVo);
+        return flag?R.ok():R.error();
+    }
 }

@@ -5,6 +5,7 @@ import com.lyb.edu.entity.CourseDescription;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+import lombok.experimental.Accessors;
 
 /**
  * @author liuyoubin
@@ -13,6 +14,7 @@ import lombok.Data;
  */
 @ApiModel(value = "课程基本信息",description = "编辑课程基本信息的Vo对象")
 @Data
+@Accessors(chain = true)
 public class CourseVo {
 
     @ApiModelProperty(value = "课程信息")
