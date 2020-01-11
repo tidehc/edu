@@ -51,7 +51,7 @@ public class TeacherAdminController {
 
     @ApiOperation(value = "可以带条件查询的分页讲师列表")
     @GetMapping("/{page}/{limit}")
-    public R pageQuery(
+    public R pageQueryTeacherList(
             @ApiParam(name="page",value = "当前页码",required = true)
             @PathVariable(value = "page") Long page,
             @ApiParam(name="limit",value = "每页记录数",required = true)

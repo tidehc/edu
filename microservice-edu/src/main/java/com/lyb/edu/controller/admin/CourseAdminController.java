@@ -1,13 +1,22 @@
 package com.lyb.edu.controller.admin;
 
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.lyb.common.constants.ResultCodeEnum;
+import com.lyb.common.exception.CustomizeException;
 import com.lyb.common.vo.R;
+import com.lyb.edu.entity.Course;
+import com.lyb.edu.query.CourseQuery;
+import com.lyb.edu.query.TeacherQuery;
 import com.lyb.edu.service.CourseService;
 import com.lyb.edu.vo.CourseVo;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 /**
  * @author liuyoubin
@@ -50,5 +59,29 @@ public class CourseAdminController {
         //保存课程基本信息的修改
         boolean flag = courseService.updateCourseInfo(courseVo);
         return flag?R.ok():R.error();
+    }
+
+    @ApiOperation(value = "可以带查询条件分页查询课程列表")
+    @GetMapping("/{page}/{limit}")
+    public R pageQueryCourseList(
+            @ApiParam(name="page",value = "当前页码",required = true)
+            @PathVariable(value = "page") Long page,
+            @ApiParam(name="limit",value = "每页记录数",required = true)
+            @PathVariable(value = "limit") Long limit,
+            @ApiParam(name = "courseQuery", value = "查询对象",required = false) CourseQuery courseQuery){
+
+        if(page<=0||limit<=0){
+            throw new CustomizeException(ResultCodeEnum.PARAM_ERROR);
+        }
+        //构造分类参数对象
+        Page<Course> pageParam = new Page<>(page, limit);
+        //查询
+        courseService.pageQuery(pageParam,courseQuery);
+        //获取查询结果列表
+        List<Course> records = pageParam.getRecords();
+        //获取结果总数据数
+        long total = pageParam.getTotal();
+
+        return R.ok().data("total",total).data("rows",records);
     }
 }

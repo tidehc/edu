@@ -1,10 +1,13 @@
 package com.lyb.edu.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.lyb.common.constants.ResultCodeEnum;
 import com.lyb.common.exception.CustomizeException;
 import com.lyb.edu.entity.Course;
 import com.lyb.edu.entity.CourseDescription;
 import com.lyb.edu.mapper.CourseMapper;
+import com.lyb.edu.query.CourseQuery;
 import com.lyb.edu.service.CourseDescriptionService;
 import com.lyb.edu.service.CourseService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -94,5 +97,44 @@ public class CourseServiceImpl extends ServiceImpl<CourseMapper, Course> impleme
         courseDescriptionService.updateById(courseVo.getDescription());
 
         return true;
+    }
+
+    /**
+     * 分页查询符合查询条件的课程信息
+     * @param pageParam 分页对象
+     * @param courseQuery 查询条件
+     */
+    @Override
+    public void pageQuery(Page<Course> pageParam, CourseQuery courseQuery) {
+
+        //构造查询对象
+        QueryWrapper<Course> queryWrapper = new QueryWrapper<>();
+        queryWrapper.orderByDesc("gmt_create");
+
+        //不存在查询条件
+        if(courseQuery==null){
+            baseMapper.selectPage(pageParam, queryWrapper);
+            return;
+        }
+
+        String title = courseQuery.getTitle();
+        String teacherId = courseQuery.getTeacherId();
+        String subjectParentId = courseQuery.getSubjectParentId();
+        String subjectId = courseQuery.getSubjectId();
+
+        if(!StringUtils.isEmpty(title)){
+            queryWrapper.like("title", title);
+        }
+        if(!StringUtils.isEmpty(teacherId)){
+            queryWrapper.eq("teacher_id", teacherId);
+        }
+        if(!StringUtils.isEmpty(subjectParentId)){
+            queryWrapper.eq("subject_parent_id", subjectParentId);
+        }
+        if(!StringUtils.isEmpty(subjectId)){
+            queryWrapper.eq("subject_id", subjectId);
+        }
+
+        baseMapper.selectPage(pageParam, queryWrapper);
     }
 }
