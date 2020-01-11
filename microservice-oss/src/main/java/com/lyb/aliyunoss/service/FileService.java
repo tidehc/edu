@@ -10,10 +10,6 @@ import java.io.IOException;
  */
 public interface FileService {
 
-    /**
-     * 上传文件的封装对象
-     * @return 文件路径
-     */
-    String uploadFile(MultipartFile file);
+    String uploadFile(MultipartFile file,String host);
 
 }

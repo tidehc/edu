@@ -23,14 +23,17 @@ public class FileController {
     @Autowired
     private FileService fileService;
 
+
     @ApiOperation(value = "文件上传")
     @PostMapping("/upload")
     public R uploadFile(
             @ApiParam(name = "file",value = "文件",required = true)
-            @RequestParam(value = "file")  MultipartFile file){
+            @RequestParam(value = "file")  MultipartFile file,
+            @ApiParam(name = "host",value = "文件上传路劲",required = false)
+            @RequestParam(value = "host",required = false)String host){
 
         //上传文件，获取url
-        String uploadUrl = fileService.uploadFile(file);
+        String uploadUrl = fileService.uploadFile(file,host);
 
         return R.ok().message("文件上传成功").data("url",uploadUrl);
     }

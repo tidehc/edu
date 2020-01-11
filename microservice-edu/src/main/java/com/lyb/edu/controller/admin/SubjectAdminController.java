@@ -20,7 +20,7 @@ import java.util.List;
  * @author liuyoubin
  * @since 2019/12/5 - 23:14
  */
-@Api(value = "课程分类管理")
+@Api(description = "课程分类管理")
 @CrossOrigin
 @RestController
 @RequestMapping("/admin/edu/subject")

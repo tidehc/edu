@@ -7,9 +7,9 @@ import com.lyb.aliyunoss.util.ConstantPropertiesUtil;
 import com.lyb.common.constants.ResultCodeEnum;
 import com.lyb.common.exception.CustomizeException;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.tomcat.util.http.fileupload.FileUploadBase;
 import org.joda.time.DateTime;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
@@ -27,25 +27,30 @@ public class FileServiceImpl implements FileService {
     /**
      * 上传文件到oss
      * @param file 文件对象
+     * @Param host 上传路径
      * @return 文件的最终路径
      */
     @Override
-    public String uploadFile(MultipartFile file) {
+    public String uploadFile(MultipartFile file,String host) {
 
         //获取阿里云oss的相关配置信息
         String accessKeyId = ConstantPropertiesUtil.ACCESS_KEY_ID;
         String accessKeySecret = ConstantPropertiesUtil.ACCESS_KEY_SECRET;
         String bucketName = ConstantPropertiesUtil.BUCKET_NAME;
         String endPoint = ConstantPropertiesUtil.END_POINT;
-        String fileHost = ConstantPropertiesUtil.FILE_HOST;
-
+        String fileHost;
+        if(StringUtils.isEmpty(host)){
+            fileHost = ConstantPropertiesUtil.FILE_HOST;
+        }else{
+            fileHost = host;
+        }
         //文件上传到oss的最终路径
         String uploadUrl;
 
         try(InputStream inputStream = file.getInputStream()) {
 
             //实例化OSS实例
-            OSSClient ossClient = new OSSClient(endPoint, accessKeyId, accessKeySecret);
+                OSSClient ossClient = new OSSClient(endPoint, accessKeyId, accessKeySecret);
 
             if(!ossClient.doesBucketExist(bucketName)){//bucket不存在
                 ossClient.createBucket(bucketName);
