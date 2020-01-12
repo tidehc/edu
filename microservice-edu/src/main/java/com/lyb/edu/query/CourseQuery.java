@@ -28,4 +28,7 @@ public class CourseQuery implements Serializable {
     @ApiModelProperty(value = "二级分类ID")
     private String subjectId;
 
+    @ApiModelProperty(value = "发布状态")
+    private String status;
+
 }

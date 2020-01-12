@@ -4,13 +4,17 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.lyb.common.constants.ResultCodeEnum;
 import com.lyb.common.exception.CustomizeException;
+import com.lyb.edu.entity.Chapter;
 import com.lyb.edu.entity.Course;
 import com.lyb.edu.entity.CourseDescription;
+import com.lyb.edu.entity.Video;
 import com.lyb.edu.mapper.CourseMapper;
 import com.lyb.edu.query.CourseQuery;
+import com.lyb.edu.service.ChapterService;
 import com.lyb.edu.service.CourseDescriptionService;
 import com.lyb.edu.service.CourseService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.lyb.edu.service.VideoService;
 import com.lyb.edu.vo.CourseVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -31,6 +35,12 @@ public class CourseServiceImpl extends ServiceImpl<CourseMapper, Course> impleme
 
     @Autowired
     private CourseDescriptionService courseDescriptionService;
+
+    @Autowired
+    private VideoService videoService;
+
+    @Autowired
+    private ChapterService chapterService;
 
     /**
      * 保存课程基本信息
@@ -69,7 +79,8 @@ public class CourseServiceImpl extends ServiceImpl<CourseMapper, Course> impleme
         //根据ID查询对应的课程描述信息
         CourseDescription description = courseDescriptionService.getById(id);
         if(description==null){
-            throw new CustomizeException(ResultCodeEnum.DATA_NOT_COMPLETE);
+            description = new CourseDescription().setId(course.getId());
+            courseDescriptionService.save(description);
         }
 
         //构造Vo对象并返回
@@ -121,6 +132,7 @@ public class CourseServiceImpl extends ServiceImpl<CourseMapper, Course> impleme
         String teacherId = courseQuery.getTeacherId();
         String subjectParentId = courseQuery.getSubjectParentId();
         String subjectId = courseQuery.getSubjectId();
+        String status = courseQuery.getStatus();
 
         if(!StringUtils.isEmpty(title)){
             queryWrapper.like("title", title);
@@ -135,6 +147,36 @@ public class CourseServiceImpl extends ServiceImpl<CourseMapper, Course> impleme
             queryWrapper.eq("subject_id", subjectId);
         }
 
+        if(!StringUtils.isEmpty(status)){
+            queryWrapper.eq("status", status);
+        }
+
         baseMapper.selectPage(pageParam, queryWrapper);
+    }
+
+    /**
+     * 根据课程ID删除课程
+     * @param id 课程ID
+     */
+    @Override
+    @Transactional
+    public void removeCourseById(String id) {
+
+        //根据ID删除所有视频
+        QueryWrapper<Video> videoQueryWrapper = new QueryWrapper<>();
+        videoQueryWrapper.eq("course_id", id);
+        videoService.remove(videoQueryWrapper);
+
+        //根据ID删除所有章节
+        QueryWrapper<Chapter> chapterQueryWrapper = new QueryWrapper<>();
+        chapterQueryWrapper.eq("course_id", id);
+        chapterService.remove(chapterQueryWrapper);
+
+        //删除课程详情
+        courseDescriptionService.removeById(id);
+
+        //删除课程基本信息
+        baseMapper.deleteById(id);
+
     }
 }

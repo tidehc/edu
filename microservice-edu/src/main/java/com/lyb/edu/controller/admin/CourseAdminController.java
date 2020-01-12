@@ -6,11 +6,9 @@ import com.lyb.common.exception.CustomizeException;
 import com.lyb.common.vo.R;
 import com.lyb.edu.entity.Course;
 import com.lyb.edu.query.CourseQuery;
-import com.lyb.edu.query.TeacherQuery;
 import com.lyb.edu.service.CourseService;
 import com.lyb.edu.vo.CourseVo;
 import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -83,5 +81,14 @@ public class CourseAdminController {
         long total = pageParam.getTotal();
 
         return R.ok().data("total",total).data("rows",records);
+    }
+
+    @ApiOperation(value = "根据课程ID删除课程")
+    @DeleteMapping("/{id}")
+    public R deleteCourseByID(
+            @ApiParam(name = "id",value = "课程ID",required = true)
+            @PathVariable(value = "id")String id){
+        courseService.removeCourseById(id);
+        return R.ok();
     }
 }

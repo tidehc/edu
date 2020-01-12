@@ -2,6 +2,9 @@ package com.lyb.edu.service;
 
 import com.lyb.edu.entity.Chapter;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.lyb.edu.vo.ChapterVo;
+
+import java.util.List;
 
 /**
  * <p>
@@ -13,4 +16,9 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface ChapterService extends IService<Chapter> {
 
+    Chapter getChapterById(String id);
+
+    void removeChapterById(String id);
+
+    List<ChapterVo> getNestedChapterListByCourseId(String courseId);
 }
