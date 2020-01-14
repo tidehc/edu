@@ -1,5 +1,6 @@
 package com.lyb.edu.controller.admin;
 
+import com.lyb.common.util.ValidUtil;
 import com.lyb.common.vo.R;
 import com.lyb.edu.entity.Chapter;
 import com.lyb.edu.service.ChapterService;
@@ -8,8 +9,10 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 /**
@@ -29,8 +32,16 @@ public class ChapterAdminController {
     @PostMapping
     public R saveChapter(
             @ApiParam(name = "chapter",value = "课程章节信息",required = true)
-            @RequestBody Chapter chapter){
-        chapterService.save(chapter);
+            @RequestBody @Valid  Chapter chapter,
+            BindingResult bindingResult){
+
+        //参数校验处理
+        if(bindingResult.hasFieldErrors()){
+            return ValidUtil.handleValidateErrorMessage(bindingResult);
+        }
+        //保存章节
+        chapterService.saveChapter(chapter);
+
         return R.ok();
 
     }

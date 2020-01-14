@@ -4,17 +4,21 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.lyb.common.constants.ResultCodeEnum;
 import com.lyb.common.exception.CustomizeException;
 import com.lyb.edu.entity.Chapter;
+import com.lyb.edu.entity.Course;
 import com.lyb.edu.entity.Video;
 import com.lyb.edu.mapper.ChapterMapper;
 import com.lyb.edu.service.ChapterService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.lyb.edu.service.CourseService;
 import com.lyb.edu.service.VideoService;
 import com.lyb.edu.vo.ChapterVo;
 import com.lyb.edu.vo.VideoVo;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,6 +33,8 @@ import java.util.List;
 @Service
 public class ChapterServiceImpl extends ServiceImpl<ChapterMapper, Chapter> implements ChapterService {
 
+    @Autowired
+    private CourseService courseService;
 
     @Autowired
     private VideoService videoService;
@@ -116,5 +122,24 @@ public class ChapterServiceImpl extends ServiceImpl<ChapterMapper, Chapter> impl
         }
 
         return chapterVos;
+    }
+
+    /**
+     * 保存章节信息
+     * @param chapter 章节信息
+     */
+    @Override
+    public void saveChapter(Chapter chapter) {
+
+        //获取章节对应的课程Id
+        String courseId = chapter.getCourseId();
+        //判断课程是否存在
+        Course course = courseService.getById(courseId);
+        if(course==null){
+            throw new CustomizeException(ResultCodeEnum.COURSE_NOT_EXIST);
+        }
+
+        //保存章节信息
+        baseMapper.insert(chapter);
     }
 }

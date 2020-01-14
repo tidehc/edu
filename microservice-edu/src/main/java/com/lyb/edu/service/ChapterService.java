@@ -21,4 +21,6 @@ public interface ChapterService extends IService<Chapter> {
     void removeChapterById(String id);
 
     List<ChapterVo> getNestedChapterListByCourseId(String courseId);
+
+    void saveChapter(Chapter chapter);
 }

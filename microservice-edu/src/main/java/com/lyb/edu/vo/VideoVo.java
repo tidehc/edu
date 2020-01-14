@@ -10,14 +10,14 @@ import java.io.Serializable;
  * @author liuyoubin
  * @since 2020/1/12 - 19:36
  */
-@ApiModel(value = "视频章节Vo对象")
+@ApiModel(value = "视频课时Vo对象")
 @Data
 public class VideoVo implements Serializable {
 
-    @ApiModelProperty(value = "视频章节Id")
+    @ApiModelProperty(value = "视频课时Id")
     private String id;
 
-    @ApiModelProperty(value = "视频章节标题")
+    @ApiModelProperty(value = "视频课时标题")
     private String title;
 
     @ApiModelProperty(value = "是否免费")

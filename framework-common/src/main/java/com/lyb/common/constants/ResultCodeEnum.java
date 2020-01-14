@@ -10,7 +10,14 @@ import lombok.Getter;
 @Getter
 public enum ResultCodeEnum {
 
-
+    /**
+     * 20000 成功
+     * 20001 未知错误
+     * 21*** 通用错误
+     * 31*** 课程相关错误
+     * 41*** 章节相关错误
+     * 51*** 课时相关错误
+     */
     SUCCESS(true, 20000,"成功"),
     UNKNOWN_REASON(false, 20001, "未知错误"),
     BAD_SQL_GRAMMAR(false, 21001, "sql语法错误"),
@@ -19,7 +26,10 @@ public enum ResultCodeEnum {
     FILE_UPLOAD_ERROR(false, 21004, "文件上传错误"),
     EXCEL_DATA_IMPORT_ERROR(false, 21005, "Excel数据导入错误"),
     DATA_NOT_EXIST(false,21006,"数据不存在"),
-    DATA_NOT_COMPLETE(false,21007,"数据不完整");
+    DATA_NOT_COMPLETE(false,21007,"数据不完整"),
+    COURSE_NOT_EXIST(false,31001,"课程不存在"),
+    CHAPTER_NOT_EXIST(false,41001,"章节不存在"),
+    VIDEO_NOT_EXIST(false,51001,"课时不存在");
 
 
     private Boolean success;
