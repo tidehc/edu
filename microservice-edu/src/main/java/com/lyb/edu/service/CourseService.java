@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.lyb.edu.entity.Course;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.lyb.edu.query.CourseQuery;
+import com.lyb.edu.vo.CoursePublishVo;
 import com.lyb.edu.vo.CourseVo;
 
 /**
@@ -25,4 +26,8 @@ public interface CourseService extends IService<Course> {
     void pageQuery(Page<Course> pageParam, CourseQuery courseQuery);
 
     void removeCourseById(String id);
+
+    CoursePublishVo getCoursePublishVoById(String id);
+
+    void publishCourseById(String id);
 }

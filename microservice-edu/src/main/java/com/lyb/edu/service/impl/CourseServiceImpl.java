@@ -15,6 +15,7 @@ import com.lyb.edu.service.CourseDescriptionService;
 import com.lyb.edu.service.CourseService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.lyb.edu.service.VideoService;
+import com.lyb.edu.vo.CoursePublishVo;
 import com.lyb.edu.vo.CourseVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -178,5 +179,37 @@ public class CourseServiceImpl extends ServiceImpl<CourseMapper, Course> impleme
         //删除课程基本信息
         baseMapper.deleteById(id);
 
+    }
+
+    /**
+     * 根据课程Id获取课程发布信息对象
+     * @param id 课程Id
+     * @return 课程发布信息Vo对象
+     */
+    @Override
+    public CoursePublishVo getCoursePublishVoById(String id) {
+
+        CoursePublishVo coursePublishVo = baseMapper.selectCoursePublishVoById(id);
+
+        if(coursePublishVo==null){
+            throw new CustomizeException(ResultCodeEnum.COURSE_NOT_EXIST);
+        }
+
+        return coursePublishVo;
+    }
+
+    /**
+     * 根据课程Id发布课程
+     * @param id 课程Id
+     */
+    @Override
+    public void publishCourseById(String id) {
+        Course course = new Course();
+        course.setId(id);
+        course.setStatus(Course.COURSE_NORMAL);
+        int i = baseMapper.updateById(course);
+        if(i!=1){
+            throw new CustomizeException(ResultCodeEnum.COURSE_NOT_EXIST);
+        }
     }
 }

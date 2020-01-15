@@ -7,6 +7,7 @@ import com.lyb.common.vo.R;
 import com.lyb.edu.entity.Course;
 import com.lyb.edu.query.CourseQuery;
 import com.lyb.edu.service.CourseService;
+import com.lyb.edu.vo.CoursePublishVo;
 import com.lyb.edu.vo.CourseVo;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -89,6 +90,26 @@ public class CourseAdminController {
             @ApiParam(name = "id",value = "课程ID",required = true)
             @PathVariable(value = "id")String id){
         courseService.removeCourseById(id);
+        return R.ok();
+    }
+
+    @ApiOperation(value = "根据课程Id获取课程发布信息对象 ")
+    @GetMapping("/publishInfo/{id}")
+    public R getCoursePublishInfoById(
+            @ApiParam(name = "id",value = "课程ID",required = true)
+            @PathVariable(value = "id")String id){
+
+        CoursePublishVo coursePublishVo = courseService.getCoursePublishVoById(id);
+
+        return R.ok().data("item",coursePublishVo);
+    }
+
+    @ApiOperation(value = "根据课程Id发布课程")
+    @PutMapping("/publish/{id}")
+    public R publishCourseById(
+            @ApiParam(name = "id",value = "课程ID",required = true)
+            @PathVariable(value = "id") String id){
+        courseService.publishCourseById(id);
         return R.ok();
     }
 }
