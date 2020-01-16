@@ -13,11 +13,28 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface VideoService extends IService<Video> {
 
+    /**
+     * 保存视频课时信息
+     * @param video 视频课时信息对象
+     */
     void saveVideo(Video video);
 
+    /**
+     * 根据视频课时Id获取课时信息
+     * @param id 视频课时Id
+     * @return 课时信息
+     */
     Video getVideoById(String id);
 
+    /**
+     * 修改视频课信息
+     * @param video 视频课信息
+     */
     void updateVideo(Video video);
 
+    /**
+     * 根据Id删除视频课时信息
+     * @param id 课时Id
+     */
     void deleteVideoById(String id);
 }

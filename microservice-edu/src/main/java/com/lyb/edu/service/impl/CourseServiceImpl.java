@@ -43,11 +43,7 @@ public class CourseServiceImpl extends ServiceImpl<CourseMapper, Course> impleme
     @Autowired
     private ChapterService chapterService;
 
-    /**
-     * 保存课程基本信息
-     * @param courseVo 课程信息Vo对象
-     * @return 保存课程信息后数据库生成的课程ID
-     */
+
     @Override
     @Transactional
     public String saveCourseVo(CourseVo courseVo) {
@@ -63,11 +59,7 @@ public class CourseServiceImpl extends ServiceImpl<CourseMapper, Course> impleme
         return id;
     }
 
-    /**
-     * 通过课程ID获取课程基本信息和描述
-     * @param id 课程ID
-     * @return 课程基本信息Vo对象
-     */
+
     @Override
     public CourseVo getCourseVoById(String id) {
 
@@ -90,11 +82,7 @@ public class CourseServiceImpl extends ServiceImpl<CourseMapper, Course> impleme
 
     }
 
-    /**
-     * 保存课程基本信息的修改
-     * @param courseVo 课程基本信息Vo对象
-     * @return 是否修改成功
-     */
+
     @Override
     public boolean updateCourseInfo(CourseVo courseVo) {
 
@@ -111,11 +99,7 @@ public class CourseServiceImpl extends ServiceImpl<CourseMapper, Course> impleme
         return true;
     }
 
-    /**
-     * 分页查询符合查询条件的课程信息
-     * @param pageParam 分页对象
-     * @param courseQuery 查询条件
-     */
+
     @Override
     public void pageQuery(Page<Course> pageParam, CourseQuery courseQuery) {
 
@@ -155,10 +139,7 @@ public class CourseServiceImpl extends ServiceImpl<CourseMapper, Course> impleme
         baseMapper.selectPage(pageParam, queryWrapper);
     }
 
-    /**
-     * 根据课程ID删除课程
-     * @param id 课程ID
-     */
+
     @Override
     @Transactional
     public void removeCourseById(String id) {
@@ -181,11 +162,7 @@ public class CourseServiceImpl extends ServiceImpl<CourseMapper, Course> impleme
 
     }
 
-    /**
-     * 根据课程Id获取课程发布信息对象
-     * @param id 课程Id
-     * @return 课程发布信息Vo对象
-     */
+
     @Override
     public CoursePublishVo getCoursePublishVoById(String id) {
 
@@ -198,10 +175,7 @@ public class CourseServiceImpl extends ServiceImpl<CourseMapper, Course> impleme
         return coursePublishVo;
     }
 
-    /**
-     * 根据课程Id发布课程
-     * @param id 课程Id
-     */
+
     @Override
     public void publishCourseById(String id) {
         Course course = new Course();

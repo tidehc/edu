@@ -29,3 +29,10 @@ mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #mybatis日志
   mapper-locations: classpath:com/lyb/edu/mapper/xml/*.xml #配置mapper xml文件的路径
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8220/eureka #注册中心地址
+  instance:
+    prefer-ip-address: true # 注册中心获取的是服务的ip地址 而不是主机名

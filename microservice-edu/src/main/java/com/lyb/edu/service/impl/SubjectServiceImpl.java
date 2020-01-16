@@ -34,12 +34,7 @@ import java.util.List;
 @Service
 public class SubjectServiceImpl extends ServiceImpl<SubjectMapper, Subject> implements SubjectService {
 
-    /**
-     * 读取Excel文件记录并导入数据库
-     * @param file Excel文件
-     * @return 导入出错提示
-     * @throws Exception 异常
-     */
+
     @Transactional
     @Override
     public List<String> batchImport(MultipartFile file) throws Exception {
@@ -112,10 +107,7 @@ public class SubjectServiceImpl extends ServiceImpl<SubjectMapper, Subject> impl
         return errorMsg;
     }
 
-    /**
-     * 获取嵌套的课程列表
-     * @return 嵌套的课程列表
-     */
+
     @Override
     public List<SubjectVo> getNestedSubjectList() {
         //最终数据列表
@@ -157,11 +149,7 @@ public class SubjectServiceImpl extends ServiceImpl<SubjectMapper, Subject> impl
         return subjectVoList;
     }
 
-    /**
-     * 根据ID删除课程分类
-     * @param id 课程分类ID
-     * @return 是否删除成功
-     */
+
     @Override
     public boolean deleteById(String id) {
 
@@ -180,11 +168,7 @@ public class SubjectServiceImpl extends ServiceImpl<SubjectMapper, Subject> impl
         return i==1;
     }
 
-    /**
-     * 添加一级课程分类
-     * @param subject 需要添加课程分类对象
-     * @return 是否添加成功
-     */
+
     @Override
     public Boolean saveLevelOneSubject(Subject subject) {
 
@@ -206,11 +190,7 @@ public class SubjectServiceImpl extends ServiceImpl<SubjectMapper, Subject> impl
         return i==1;
     }
 
-    /**
-     * 添加二级课程分类
-     * @param subject 需要添加课程分类对象
-     * @return 是否添加成功
-     */
+
     @Override
     public Boolean saveLevelTwoSubject(Subject subject) {
         String title = subject.getTitle();

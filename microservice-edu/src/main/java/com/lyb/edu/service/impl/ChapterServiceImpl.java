@@ -39,11 +39,7 @@ public class ChapterServiceImpl extends ServiceImpl<ChapterMapper, Chapter> impl
     @Autowired
     private VideoService videoService;
 
-    /**
-     *通过ID查找课程章节
-     * @param id 课程章节ID
-     * @return 课程章节对象
-     */
+
     @Override
     public Chapter getChapterById(String id) {
 
@@ -56,10 +52,7 @@ public class ChapterServiceImpl extends ServiceImpl<ChapterMapper, Chapter> impl
         return chapter;
     }
 
-    /**
-     * 通过ID删除课程章节
-     * @param id  课程章节ID
-     */
+
     @Override
     public void removeChapterById(String id) {
 
@@ -75,11 +68,7 @@ public class ChapterServiceImpl extends ServiceImpl<ChapterMapper, Chapter> impl
         videoService.remove(queryWrapper);
     }
 
-    /**
-     * 通过课程Id获取嵌套章节列表
-     * @param courseId 课程Id
-     * @return 嵌套章节列表
-     */
+
     @Override
     public List<ChapterVo> getNestedChapterListByCourseId(String courseId) {
 
@@ -124,10 +113,7 @@ public class ChapterServiceImpl extends ServiceImpl<ChapterMapper, Chapter> impl
         return chapterVos;
     }
 
-    /**
-     * 保存章节信息
-     * @param chapter 章节信息
-     */
+
     @Override
     public void saveChapter(Chapter chapter) {
 

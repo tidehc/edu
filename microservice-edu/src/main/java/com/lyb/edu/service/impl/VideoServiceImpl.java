@@ -30,10 +30,7 @@ public class VideoServiceImpl extends ServiceImpl<VideoMapper, Video> implements
     @Autowired
     private ChapterService chapterService;
 
-    /**
-     * 保存视频课时信息
-     * @param video 视频课时信息对象
-     */
+
     @Override
     public void saveVideo(Video video) {
         //获取课程ID
@@ -56,11 +53,7 @@ public class VideoServiceImpl extends ServiceImpl<VideoMapper, Video> implements
 
     }
 
-    /**
-     * 根据视频课时Id获取课时信息
-     * @param id 视频课时Id
-     * @return 课时信息
-     */
+
     @Override
     public Video getVideoById(String id) {
 
@@ -72,10 +65,7 @@ public class VideoServiceImpl extends ServiceImpl<VideoMapper, Video> implements
         return video;
     }
 
-    /**
-     * 修改视频课信息
-     * @param video 视频课信息
-     */
+
     @Override
     public void updateVideo(Video video) {
         int i = baseMapper.updateById(video);
@@ -84,10 +74,7 @@ public class VideoServiceImpl extends ServiceImpl<VideoMapper, Video> implements
         }
     }
 
-    /**
-     * 根据Id删除视频课时信息
-     * @param id 课时Id
-     */
+
     @Override
     public void deleteVideoById(String id) {
         //删除视频资源 TODO

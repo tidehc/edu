@@ -15,6 +15,11 @@ import com.lyb.edu.query.TeacherQuery;
  */
 public interface TeacherService extends IService<Teacher> {
 
+    /**
+     * 分页查询符合条件的讲师列表
+     * @param pageParam 分页对象
+     * @param teacherQuery 查询对象
+     */
     void pageQuery(Page<Teacher> pageParam, TeacherQuery teacherQuery);
 
 }

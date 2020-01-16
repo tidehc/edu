@@ -24,12 +24,7 @@ import java.util.UUID;
 @Slf4j
 public class FileServiceImpl implements FileService {
 
-    /**
-     * 上传文件到oss
-     * @param file 文件对象
-     * @Param host 上传路径
-     * @return 文件的最终路径
-     */
+
     @Override
     public String uploadFile(MultipartFile file,String host) {
 

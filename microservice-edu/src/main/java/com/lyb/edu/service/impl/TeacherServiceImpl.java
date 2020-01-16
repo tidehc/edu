@@ -21,11 +21,7 @@ import org.springframework.util.StringUtils;
 @Service
 public class TeacherServiceImpl extends ServiceImpl<TeacherMapper, Teacher> implements TeacherService {
 
-    /**
-     * 分页查询符合条件的讲师列表
-     * @param pageParam
-     * @param teacherQuery
-     */
+
     @Override
     public void pageQuery(Page<Teacher> pageParam, TeacherQuery teacherQuery) {
 
