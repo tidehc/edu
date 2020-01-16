@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="microservice-edu" />
+        <module name="microservice-statistics" />
         <module name="microserivce-eureka" />
         <module name="microservice-oss" />
         <module name="framework-common" />
@@ -22,6 +23,7 @@
       <module name="microserivce-eureka" target="1.8" />
       <module name="microservice-edu" target="1.8" />
       <module name="microservice-oss" target="1.8" />
+      <module name="microservice-statistics" target="1.8" />
       <module name="microservice-sysuser" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -34,6 +36,7 @@
       <module name="microserivce-eureka" options="-parameters" />
       <module name="microservice-edu" options="-parameters" />
       <module name="microservice-oss" options="-parameters" />
+      <module name="microservice-statistics" options="-parameters" />
       <module name="microservice-sysuser" options="-parameters" />
     </option>
   </component>
