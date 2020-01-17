@@ -16,6 +16,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 
@@ -40,11 +41,11 @@ public class Chapter implements Serializable {
     @TableId(value = "id", type = IdType.ID_WORKER_STR)
     private String id;
 
-    @NotNull(message = "课程ID不能为空")
+    @NotBlank(message = "课程ID不能为空")
     @ApiModelProperty(value = "课程ID")
     private String courseId;
 
-    @NotNull(message = "章节标题不能为空")
+    @NotBlank(message = "章节标题不能为空")
     @ApiModelProperty(value = "章节名称")
     private String title;
 

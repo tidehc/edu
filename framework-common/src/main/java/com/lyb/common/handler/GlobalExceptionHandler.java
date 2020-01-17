@@ -8,9 +8,17 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.json.JsonParseException;
 import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.jdbc.BadSqlGrammarException;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.FieldError;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * @author liuyoubin
@@ -31,6 +39,27 @@ public class GlobalExceptionHandler {
         //log.error(e.getMessage());
         log.error(ExceptionUtil.getMessage(e));
         return R.error();
+    }
+
+    /**
+     * 参数绑定校验异常处理
+     * @param e 异常对象
+     * @return 统一返回信息
+     */
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    @ResponseBody
+    public R error(MethodArgumentNotValidException e){
+        BindingResult bindingResult = e.getBindingResult();
+
+        //错误消息集合
+        //Map<String,Object> errorMessages = new HashMap<>();
+        List<String> errorMessages = new ArrayList<>();
+
+        bindingResult.getFieldErrors().forEach(fieldError -> {
+            errorMessages.add(fieldError.getDefaultMessage());
+        });
+        log.error(ExceptionUtil.getMessage(e));
+        return R.setResult(ResultCodeEnum.PARAM_ERROR).data("errorMessages",errorMessages);
     }
 
     /**
