@@ -27,6 +27,10 @@ public enum ResultCodeEnum {
     EXCEL_DATA_IMPORT_ERROR(false, 21005, "Excel数据导入错误"),
     DATA_NOT_EXIST(false,21006,"数据不存在"),
     DATA_NOT_COMPLETE(false,21007,"数据不完整"),
+    URL_ENCODE_ERROR(false,21008,"url编码错误"),
+    ILLEGAL_CALLBACK_REQUEST_ERROR(false,21009,"非法回调请求错误"),
+    FETCH_ACCESSTOKEN_FAILD(false,21010,"获取AccessToken失败"),
+    FETCH_USER_INFO_FAILD(false,21010,"获取用户信息失败失败"),
     COURSE_NOT_EXIST(false,31001,"课程不存在"),
     CHAPTER_NOT_EXIST(false,41001,"章节不存在"),
     VIDEO_NOT_EXIST(false,51001,"课时不存在");

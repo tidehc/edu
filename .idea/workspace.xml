@@ -3,21 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="f2439adb-19da-4027-8485-c17493f7692f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework-common/src/main/java/com/lyb/common/handler/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/framework-common/src/main/java/com/lyb/common/handler/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework-common/src/main/java/com/lyb/common/util/ValidUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework-common/src/main/java/com/lyb/common/constants/ResultCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/framework-common/src/main/java/com/lyb/common/constants/ResultCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework-common/target/classes/com/lyb/common/constants/ResultCodeEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/framework-common/target/classes/com/lyb/common/constants/ResultCodeEnum.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/framework-common/target/classes/com/lyb/common/handler/GlobalExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/framework-common/target/classes/com/lyb/common/handler/GlobalExceptionHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/controller/admin/ChapterAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/controller/admin/ChapterAdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/entity/Chapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/entity/Chapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-edu/target/classes/com/lyb/edu/entity/Chapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-edu/target/classes/com/lyb/edu/entity/Chapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-edu/target/classes/com/lyb/edu/service/impl/ChapterServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-edu/target/classes/com/lyb/edu/service/impl/ChapterServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-edu/target/classes/com/lyb/edu/service/impl/CourseServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-edu/target/classes/com/lyb/edu/service/impl/CourseServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-edu/target/classes/com/lyb/edu/service/impl/SubjectServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-edu/target/classes/com/lyb/edu/service/impl/SubjectServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-edu/target/classes/com/lyb/edu/service/impl/TeacherServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-edu/target/classes/com/lyb/edu/service/impl/TeacherServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-edu/target/classes/com/lyb/edu/service/impl/VideoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-edu/target/classes/com/lyb/edu/service/impl/VideoServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-statistics/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-statistics/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-statistics/src/main/java/com/lyb/statistics/StatisticsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-statistics/src/main/java/com/lyb/statistics/StatisticsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-statistics/src/main/java/com/lyb/statistics/service/DailyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-statistics/src/main/java/com/lyb/statistics/service/DailyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-statistics/src/main/java/com/lyb/statistics/service/impl/DailyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-statistics/src/main/java/com/lyb/statistics/service/impl/DailyServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microsericve-ucenter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microsericve-ucenter/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/service/MemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/service/impl/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/service/impl/MemberServiceImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/framework-parent/target/" />
     <ignored path="$PROJECT_DIR$/framework-common/target/" />
@@ -59,55 +50,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/microservice-statistics/src/main/java/com/lyb/statistics/controller/admin/DailyAdminController.java">
+        <entry file="file://$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/util/HttpClientUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-380">
-              <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/framework-common/src/main/java/com/lyb/common/handler/GlobalExceptionHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="58" column="62" lean-forward="true" selection-start-line="58" selection-start-column="62" selection-end-line="58" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/framework-common/src/main/java/com/lyb/common/vo/R.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="41" column="42" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/framework-common/src/main/java/com/lyb/common/util/ExceptionUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/controller/admin/ChapterAdminController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/microservice-statistics/src/main/java/com/lyb/statistics/service/impl/DailyServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="120" column="18" selection-start-line="120" selection-start-column="18" selection-end-line="120" selection-end-column="18" />
+            <state relative-caret-position="2002">
+              <caret line="77" column="25" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -116,24 +62,81 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/microservice-edu/microservice-edu.iml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/microservice-edu/pom.xml">
+        <entry file="file://$PROJECT_DIR$/microsericve-ucenter/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="76" column="21" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="21" />
+            <state relative-caret-position="354">
+              <caret line="41" column="48" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="48" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/entity/Chapter.java">
+        <entry file="file://$PROJECT_DIR$/microsericve-ucenter/microsericve-ucenter.iml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/api/WxApiController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+            <state relative-caret-position="279">
+              <caret line="165" column="54" selection-start-line="165" selection-start-column="54" selection-end-line="165" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/util/ConstantPropertiesUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="389">
+              <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/config/WebConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="365">
+              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/service/MemberService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/service/impl/MemberServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="365">
+              <caret line="33" column="48" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/controller/admin/MemberAdminController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="728">
+              <caret line="28" column="49" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -141,8 +144,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/framework-common/src/main/java/com/lyb/common/constants/ResultCodeEnum.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="24" column="28" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="28" />
+            <state relative-caret-position="832">
+              <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -164,17 +167,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/controller/admin/CourseAdminController.java" />
-        <option value="$PROJECT_DIR$/framework-parent/pom.xml" />
-        <option value="$PROJECT_DIR$/microserivce-eureka/src/main/java/com/lyb/eureka/EurekaServerApplication.java" />
-        <option value="$PROJECT_DIR$/microserivce-eureka/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/microserivce-eureka/src/main/resources/logback-spring.xml" />
         <option value="$PROJECT_DIR$/microservice-edu/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/EduApplication.java" />
         <option value="$PROJECT_DIR$/microserivce-eureka/pom.xml" />
-        <option value="$PROJECT_DIR$/microsericve-ucenter/pom.xml" />
         <option value="$PROJECT_DIR$/microsericve-ucenter/src/main/resources/logback-spring.xml" />
-        <option value="$PROJECT_DIR$/microsericve-ucenter/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/microsericve-ucenter/src/test/java/ucenter/CodeGenerator.java" />
         <option value="$PROJECT_DIR$/microsericve-ucenter/src/test/java/com/lyb/ucenter/CodeGenerator.java" />
         <option value="$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/entity/Member.java" />
@@ -194,11 +191,8 @@
         <option value="$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/service/VideoService.java" />
         <option value="$PROJECT_DIR$/microservice-oss/src/main/java/com/lyb/aliyunoss/service/impl/FileServiceImpl.java" />
         <option value="$PROJECT_DIR$/microservice-oss/src/main/java/com/lyb/aliyunoss/service/FileService.java" />
-        <option value="$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/service/MemberService.java" />
         <option value="$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/mapper/MemberMapper.java" />
         <option value="$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/mapper/xml/MemberMapper.xml" />
-        <option value="$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/service/impl/MemberServiceImpl.java" />
-        <option value="$PROJECT_DIR$/microservice-statistics/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/microservice-statistics/src/main/resources/logback-spring.xml" />
         <option value="$PROJECT_DIR$/microservice-statistics/src/test/java/com/lyb/statistics/CodeGenerator.java" />
         <option value="$PROJECT_DIR$/microservice-statistics/src/main/java/com/lyb/statistics/config/MyBatisPlusConfig.java" />
@@ -211,10 +205,19 @@
         <option value="$PROJECT_DIR$/microservice-statistics/src/main/java/com/lyb/statistics/query/ChartQuery.java" />
         <option value="$PROJECT_DIR$/microservice-edu/pom.xml" />
         <option value="$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/entity/Chapter.java" />
-        <option value="$PROJECT_DIR$/framework-common/src/main/java/com/lyb/common/constants/ResultCodeEnum.java" />
         <option value="$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/controller/admin/ChapterAdminController.java" />
         <option value="$PROJECT_DIR$/microservice-statistics/src/main/java/com/lyb/statistics/controller/admin/DailyAdminController.java" />
         <option value="$PROJECT_DIR$/framework-common/src/main/java/com/lyb/common/handler/GlobalExceptionHandler.java" />
+        <option value="$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/util/ConstantPropertiesUtil.java" />
+        <option value="$PROJECT_DIR$/microsericve-ucenter/pom.xml" />
+        <option value="$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/util/HttpClientUtils.java" />
+        <option value="$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/service/MemberService.java" />
+        <option value="$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/service/impl/MemberServiceImpl.java" />
+        <option value="$PROJECT_DIR$/framework-common/src/main/java/com/lyb/common/constants/ResultCodeEnum.java" />
+        <option value="$PROJECT_DIR$/microservice-statistics/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/config/WebConfig.java" />
+        <option value="$PROJECT_DIR$/microsericve-ucenter/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/api/WxApiController.java" />
       </list>
     </option>
   </component>
@@ -262,8 +265,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -274,80 +275,25 @@
             <path>
               <item name="edu" type="b2602c69:ProjectViewProjectNode" />
               <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="framework-common" type="462c0819:PsiDirectoryNode" />
+              <item name="microsericve-ucenter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="edu" type="b2602c69:ProjectViewProjectNode" />
               <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="framework-common" type="462c0819:PsiDirectoryNode" />
+              <item name="microsericve-ucenter" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="edu" type="b2602c69:ProjectViewProjectNode" />
               <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="framework-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="framework-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="framework-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="framework-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="handler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="framework-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="microservice-edu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="microservice-edu" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="microservice-edu" type="462c0819:PsiDirectoryNode" />
+              <item name="microsericve-ucenter" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="edu" type="b2602c69:ProjectViewProjectNode" />
               <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="microservice-edu" type="462c0819:PsiDirectoryNode" />
+              <item name="microsericve-ucenter" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -355,42 +301,40 @@
             <path>
               <item name="edu" type="b2602c69:ProjectViewProjectNode" />
               <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="microservice-edu" type="462c0819:PsiDirectoryNode" />
+              <item name="microsericve-ucenter" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="ucenter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="edu" type="b2602c69:ProjectViewProjectNode" />
               <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="microservice-edu" type="462c0819:PsiDirectoryNode" />
+              <item name="microsericve-ucenter" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="ucenter" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="edu" type="b2602c69:ProjectViewProjectNode" />
               <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="microservice-edu" type="462c0819:PsiDirectoryNode" />
+              <item name="microsericve-ucenter" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="edu" type="b2602c69:ProjectViewProjectNode" />
               <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="microservice-edu" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="microserivce-eureka" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="edu" type="b2602c69:ProjectViewProjectNode" />
               <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
+              <item name="microserivce-eureka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="edu" type="b2602c69:ProjectViewProjectNode" />
@@ -416,67 +360,14 @@
               <item name="microservice-statistics" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="microservice-statistics" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="statistics" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="microservice-statistics" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="statistics" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="microservice-statistics" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="statistics" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="microservice-statistics" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="statistics" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="microservice-statistics" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="statistics" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -617,10 +508,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.EduApplication" />
-        <item itemvalue="Spring Boot.SysUserApplication" />
         <item itemvalue="Spring Boot.UcenterApplication" />
         <item itemvalue="Spring Boot.EurekaServerApplication" />
+        <item itemvalue="Spring Boot.EduApplication" />
+        <item itemvalue="Spring Boot.SysUserApplication" />
         <item itemvalue="Application.DailyAdminController" />
       </list>
     </recent_temporary>
@@ -752,7 +643,12 @@
       <workItem from="1579148949632" duration="120000" />
       <workItem from="1579149080342" duration="1264000" />
       <workItem from="1579152650091" duration="13714000" />
-      <workItem from="1579243670727" duration="20320000" />
+      <workItem from="1579243670727" duration="20930000" />
+      <workItem from="1579339655666" duration="6000" />
+      <workItem from="1579340766214" duration="5617000" />
+      <workItem from="1579350020481" duration="5602000" />
+      <workItem from="1579355870017" duration="130000" />
+      <workItem from="1579356048809" duration="3306000" />
     </task>
     <servers />
   </component>
@@ -768,14 +664,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="249640000" />
+    <option name="totallyTimeSpent" value="264911000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Web" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.20520674" visible="true" weight="0.23927614" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.20520674" visible="true" weight="0.24597855" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -783,7 +678,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Structure" order="7" sideWeight="0.79479325" weight="0.28619304" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.15846154" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.67846155" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" weight="0.37538463" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -798,7 +693,7 @@
       <window_info anchor="bottom" id="Tail" order="13" />
       <window_info anchor="bottom" id="Spring" order="14" weight="0.32923076" />
       <window_info anchor="bottom" id="Java Enterprise" order="15" weight="0.32923076" />
-      <window_info anchor="bottom" id="Run Dashboard" order="16" sideWeight="0.49865952" weight="0.34615386" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="16" sideWeight="0.49865952" visible="true" weight="0.35692307" />
       <window_info anchor="bottom" id="JProfiler" order="17" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -809,7 +704,7 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="9" weight="0.3297587" />
     </layout>
     <layout-to-restore>
       <window_info id="Web" order="0" side_tool="true" />
@@ -855,62 +750,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/service/impl/VideoServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="76" column="4" selection-start-line="76" selection-start-column="4" selection-end-line="76" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/service/TeacherService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/service/VideoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/mapper/ChapterMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/mapper/CourseDescriptionMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/mapper/CourseMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservice-oss/src/main/java/com/lyb/aliyunoss/service/impl/FileServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservice-oss/src/main/java/com/lyb/aliyunoss/service/FileService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/mapper/MemberMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -922,13 +761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/service/impl/MemberServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -963,37 +795,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/microsericve-ucenter/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2054">
-          <caret line="79" column="12" selection-start-line="79" selection-start-column="12" selection-end-line="79" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microsericve-ucenter/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/service/MemberService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/controller/admin/MemberAdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="28" column="49" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/microservice-statistics/src/main/java/com/lyb/statistics/entity/Daily.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
@@ -1017,20 +818,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="35">
           <caret line="93" column="17" selection-start-line="93" selection-start-column="17" selection-end-line="93" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservice-statistics/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1430">
-          <caret line="67" column="21" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservice-statistics/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -1164,48 +951,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/microservice-edu/microservice-edu.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservice-edu/pom.xml">
+    <entry file="file://$PROJECT_DIR$/framework-common/src/main/java/com/lyb/common/util/ValidUtil.java" />
+    <entry file="file://$PROJECT_DIR$/microservice-statistics/src/main/java/com/lyb/statistics/controller/admin/DailyAdminController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="76" column="21" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/entity/Chapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-common/src/main/java/com/lyb/common/util/ExceptionUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        <state relative-caret-position="208">
+          <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/framework-common/src/main/java/com/lyb/common/vo/R.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
+        <state relative-caret-position="910">
           <caret line="41" column="42" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/framework-common/src/main/java/com/lyb/common/constants/ResultCodeEnum.java">
+    <entry file="file://$PROJECT_DIR$/framework-common/src/main/java/com/lyb/common/util/ExceptionUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="24" column="28" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-common/src/main/java/com/lyb/common/util/ValidUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="33" column="15" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
+        <state relative-caret-position="260">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -1218,7 +982,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/microservice-statistics/src/main/java/com/lyb/statistics/service/impl/DailyServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
+        <state relative-caret-position="3120">
           <caret line="120" column="18" selection-start-line="120" selection-start-column="18" selection-end-line="120" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1226,17 +990,146 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/microservice-statistics/src/main/java/com/lyb/statistics/controller/admin/DailyAdminController.java">
+    <entry file="file://$PROJECT_DIR$/microservice-edu/microservice-edu.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-edu/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-380">
-          <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
+        <state relative-caret-position="1976">
+          <caret line="76" column="21" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/entity/Chapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="754">
+          <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/framework-common/src/main/java/com/lyb/common/handler/GlobalExceptionHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="58" column="62" lean-forward="true" selection-start-line="58" selection-start-column="62" selection-end-line="58" selection-end-column="62" />
+        <state relative-caret-position="54">
+          <caret line="58" column="62" selection-start-line="58" selection-start-column="62" selection-end-line="58" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-statistics/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1742">
+          <caret line="67" column="21" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-parent/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2964">
+          <caret line="114" column="18" selection-start-line="108" selection-start-column="13" selection-end-line="125" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microsericve-ucenter/src/main/resources/logback-spring.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/jre/lib/rt.jar!/javax/net/ssl/HostnameVerifier.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-statistics/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microsericve-ucenter/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2080">
+          <caret line="80" column="41" selection-start-line="80" selection-start-column="41" selection-end-line="80" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/util/HttpClientUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2002">
+          <caret line="77" column="25" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microsericve-ucenter/microsericve-ucenter.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/service/MemberService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/controller/admin/MemberAdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="728">
+          <caret line="28" column="49" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-common/src/main/java/com/lyb/common/constants/ResultCodeEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="832">
+          <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/config/WebConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/service/impl/MemberServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="33" column="48" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/util/ConstantPropertiesUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microsericve-ucenter/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="41" column="48" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/api/WxApiController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="165" column="54" selection-start-line="165" selection-start-column="54" selection-end-line="165" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1290,7 +1183,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>microservice-edu</last-edited>
+          <last-edited>framework-common</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
