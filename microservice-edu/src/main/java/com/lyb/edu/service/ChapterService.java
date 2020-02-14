@@ -24,7 +24,7 @@ public interface ChapterService extends IService<Chapter> {
     Chapter getChapterById(String id);
 
     /**
-     * 通过ID删除课程章节
+     * 通过ID删除课程章节,以及章节下的课时、视频资源
      * @param id  课程章节ID
      */
     void removeChapterById(String id);

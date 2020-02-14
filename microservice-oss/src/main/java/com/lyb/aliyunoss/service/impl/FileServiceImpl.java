@@ -34,6 +34,7 @@ public class FileServiceImpl implements FileService {
         String bucketName = ConstantPropertiesUtil.BUCKET_NAME;
         String endPoint = ConstantPropertiesUtil.END_POINT;
         String fileHost;
+
         if(StringUtils.isEmpty(host)){
             fileHost = ConstantPropertiesUtil.FILE_HOST;
         }else{

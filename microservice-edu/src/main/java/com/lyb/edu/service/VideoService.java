@@ -37,4 +37,10 @@ public interface VideoService extends IService<Video> {
      * @param id 课时Id
      */
     void deleteVideoById(String id);
+
+    /**
+     * 根据chapter_id删除课时信息、云端视频
+     * @param chapter_id 课时的chapter_id
+     */
+    void removeVideoByChapterId(String chapter_id);
 }

@@ -15,6 +15,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 @FeignClient("ucenter") //指定从哪个服务调用功能，名称与被调用的服务名保持一致
 public interface UcenterClient {
 
+    /**
+     * 查询指定日期的注册人数
+     * @param day 指定日期
+     */
     @GetMapping(value = "/admin/ucenter/member/registerCount/{day}")
     R registerMemberCountByDay(@PathVariable(value = "day") String day);
 

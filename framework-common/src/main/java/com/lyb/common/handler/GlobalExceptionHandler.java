@@ -68,8 +68,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(CustomizeException.class)
     @ResponseBody
     public R error(CustomizeException e){
-        //e.printStackTrace();
-        //log.error(e.getMessage());
+
         log.error(ExceptionUtil.getMessage(e));
         return R.error().message(e.getMessage()).code(e.getCode());
     }
@@ -80,8 +79,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(BadSqlGrammarException.class)
     @ResponseBody
     public R error(BadSqlGrammarException e){
-        //e.printStackTrace();
-        //log.error(e.getMessage());
+
         log.error(ExceptionUtil.getMessage(e));
         return R.setResult(ResultCodeEnum.BAD_SQL_GRAMMAR);
     }
@@ -90,8 +88,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(HttpMessageNotReadableException.class)
     @ResponseBody
     public R error(JsonParseException e){
-        //e.printStackTrace();
-        //log.error(e.getMessage());
+
         log.error(ExceptionUtil.getMessage(e));
         return R.setResult(ResultCodeEnum.JSON_PARSE_ERROR);
 

@@ -13,12 +13,11 @@ import com.lyb.edu.service.CourseService;
 import com.lyb.edu.service.VideoService;
 import com.lyb.edu.vo.ChapterVo;
 import com.lyb.edu.vo.VideoVo;
-import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
-import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -34,10 +33,10 @@ import java.util.List;
 public class ChapterServiceImpl extends ServiceImpl<ChapterMapper, Chapter> implements ChapterService {
 
     @Autowired
-    private CourseService courseService;
+    private  CourseService courseService;
 
     @Autowired
-    private VideoService videoService;
+    private  VideoService videoService;
 
 
     @Override
@@ -52,7 +51,7 @@ public class ChapterServiceImpl extends ServiceImpl<ChapterMapper, Chapter> impl
         return chapter;
     }
 
-
+    @Transactional
     @Override
     public void removeChapterById(String id) {
 
@@ -62,10 +61,9 @@ public class ChapterServiceImpl extends ServiceImpl<ChapterMapper, Chapter> impl
             throw new CustomizeException(ResultCodeEnum.DATA_NOT_EXIST);
         }
 
-        //根据章节Id删除所有视频
-        QueryWrapper<Video> queryWrapper = new QueryWrapper<>();
-        queryWrapper.eq("chapter_id", id);
-        videoService.remove(queryWrapper);
+        //根据章节Id删除所有课时以及视频
+        videoService.removeVideoByChapterId(id);
+
     }
 
 

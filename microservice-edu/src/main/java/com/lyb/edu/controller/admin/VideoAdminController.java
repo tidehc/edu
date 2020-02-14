@@ -19,8 +19,11 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/admin/edu/video")
 public class VideoAdminController {
 
-    @Autowired
-    private VideoService videoService;
+    private final VideoService videoService;
+
+    public VideoAdminController(VideoService videoService) {
+        this.videoService = videoService;
+    }
 
     @ApiOperation(value = "保存课时信息")
     @PostMapping

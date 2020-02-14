@@ -25,8 +25,11 @@ import java.util.List;
 @Api(description = "讲师管理")
 public class TeacherAdminController {
 
-    @Autowired
-    private TeacherService teacherService;
+    private final TeacherService teacherService;
+
+    public TeacherAdminController(TeacherService teacherService) {
+        this.teacherService = teacherService;
+    }
 
     /**
      * 查询所有教师
@@ -58,13 +61,9 @@ public class TeacherAdminController {
             @PathVariable(value = "limit") Long limit,
             @ApiParam(name = "teacherQuery", value = "查询对象",required = false) TeacherQuery teacherQuery){
 
-        if(page<=0||limit<=0){
-            throw new CustomizeException(ResultCodeEnum.PARAM_ERROR);
-        }
-
-        Page<Teacher> pageParam = new Page<>(page,limit);
-        teacherService.pageQuery(pageParam, teacherQuery);
-        //分页列表
+        //查询并获取讲师列表
+        Page<Teacher> pageParam = teacherService.pageQuery(page,limit, teacherQuery);
+        //获取具体数据
         List<Teacher> records = pageParam.getRecords();
         long total = pageParam.getTotal();
 

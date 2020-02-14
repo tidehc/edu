@@ -2,6 +2,8 @@ package com.lyb.edu.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.lyb.common.constants.ResultCodeEnum;
+import com.lyb.common.exception.CustomizeException;
 import com.lyb.edu.entity.Teacher;
 import com.lyb.edu.mapper.TeacherMapper;
 import com.lyb.edu.query.TeacherQuery;
@@ -9,6 +11,10 @@ import com.lyb.edu.service.TeacherService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * <p>
@@ -23,13 +29,22 @@ public class TeacherServiceImpl extends ServiceImpl<TeacherMapper, Teacher> impl
 
 
     @Override
-    public void pageQuery(Page<Teacher> pageParam, TeacherQuery teacherQuery) {
+    public Page<Teacher> pageQuery(Long page, Long limit, TeacherQuery teacherQuery) {
 
+        //分页参数判断
+        if(page<=0||limit<=0){
+            throw new CustomizeException(ResultCodeEnum.PARAM_ERROR);
+        }
+        //构造分页查询对象
+        Page<Teacher> pageParam = new Page<>(page,limit);
+
+        //构造条件查询对象
         QueryWrapper<Teacher> queryWrapper = new QueryWrapper<>();
         queryWrapper.orderByAsc("sort");
 
-        if(teacherQuery==null){
+        if(teacherQuery==null){//如果没有查询条件则直接查询返回
             baseMapper.selectPage(pageParam, queryWrapper);
+            return pageParam;
         }
 
         //获取查询条件
@@ -56,5 +71,39 @@ public class TeacherServiceImpl extends ServiceImpl<TeacherMapper, Teacher> impl
         }
 
         baseMapper.selectPage(pageParam, queryWrapper);
+
+        return pageParam;
+    }
+
+
+    @Override
+    public Map<String, Object> pageQueryWeb(Long page, Long limit) {
+
+        //分页参数判断
+        if(page<=0||limit<=0){
+            throw new CustomizeException(ResultCodeEnum.PARAM_ERROR);
+        }
+
+        //构造分页查询对象
+        Page<Teacher> pageParam = new Page<>(page,limit);
+
+        //构造条件查询对象
+        QueryWrapper<Teacher> queryWrapper = new QueryWrapper<>();
+        queryWrapper.orderByAsc("sort");
+
+        //查询
+        baseMapper.selectPage(pageParam, queryWrapper);
+
+        //封装查询数据
+        Map<String,Object> resultMap = new HashMap<>();
+        resultMap.put("items", pageParam.getRecords());
+        resultMap.put("current", pageParam.getCurrent());
+        resultMap.put("pages", pageParam.getPages());
+        resultMap.put("size", pageParam.getSize());
+        resultMap.put("total", pageParam.getTotal());
+        resultMap.put("hasNext",pageParam.hasNext());
+        resultMap.put("hasPrevious", pageParam.hasPrevious());
+
+        return resultMap;
     }
 }

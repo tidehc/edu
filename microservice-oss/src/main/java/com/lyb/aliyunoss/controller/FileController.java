@@ -20,8 +20,11 @@ import org.springframework.web.multipart.MultipartFile;
 @RequestMapping("/admin/oss/file")
 public class FileController {
 
-    @Autowired
-    private FileService fileService;
+    private final FileService fileService;
+
+    public FileController(FileService fileService) {
+        this.fileService = fileService;
+    }
 
 
     @ApiOperation(value = "文件上传")

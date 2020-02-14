@@ -25,8 +25,11 @@ import java.util.List;
 @RequestMapping("/admin/edu/chapter")
 public class ChapterAdminController {
 
-    @Autowired
-    private ChapterService chapterService;
+    private final ChapterService chapterService;
+
+    public ChapterAdminController(ChapterService chapterService) {
+        this.chapterService = chapterService;
+    }
 
     @ApiOperation(value = "添加课程章节")
     @PostMapping

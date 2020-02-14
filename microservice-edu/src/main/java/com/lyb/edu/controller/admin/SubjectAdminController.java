@@ -27,8 +27,11 @@ import java.util.List;
 @Slf4j
 public class SubjectAdminController {
 
-    @Autowired
-    SubjectService subjectService;
+    private final SubjectService subjectService;
+
+    public SubjectAdminController(SubjectService subjectService) {
+        this.subjectService = subjectService;
+    }
 
     @ApiOperation(value = "Excel批量导入课程")
     @PostMapping("/import")

@@ -22,8 +22,11 @@ import java.util.Map;
 @RequestMapping("/admin/statistics/daily")
 public class DailyAdminController {
 
-    @Autowired
-    private DailyService dailyService;
+    private final DailyService dailyService;
+
+    public DailyAdminController(DailyService dailyService) {
+        this.dailyService = dailyService;
+    }
 
     @ApiOperation(value = "生成指定日期的统计记录")
     @PostMapping("/{day}")

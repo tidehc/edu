@@ -27,8 +27,11 @@ import java.util.List;
 @RequestMapping("/admin/edu/course")
 public class CourseAdminController {
 
-    @Autowired
-    CourseService courseService;
+    private final CourseService courseService;
+
+    public CourseAdminController(CourseService courseService) {
+        this.courseService = courseService;
+    }
 
     @ApiOperation(value = "保存课程基本信息和描述,返回课程信息的ID")
     @PostMapping("/info")

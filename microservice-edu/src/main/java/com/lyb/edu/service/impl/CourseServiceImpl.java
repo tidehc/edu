@@ -33,15 +33,15 @@ import org.springframework.util.StringUtils;
 @Service
 public class CourseServiceImpl extends ServiceImpl<CourseMapper, Course> implements CourseService {
 
+    @Autowired
+    private  CourseDescriptionService courseDescriptionService;
 
     @Autowired
-    private CourseDescriptionService courseDescriptionService;
+    private  VideoService videoService;
 
     @Autowired
-    private VideoService videoService;
+    private  ChapterService chapterService;
 
-    @Autowired
-    private ChapterService chapterService;
 
 
     @Override

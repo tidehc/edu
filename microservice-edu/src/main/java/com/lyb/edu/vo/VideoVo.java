@@ -20,6 +20,9 @@ public class VideoVo implements Serializable {
     @ApiModelProperty(value = "视频课时标题")
     private String title;
 
+    @ApiModelProperty(value = "视频文件名称")
+    private String videoOriginalName;
+
     @ApiModelProperty(value = "是否免费")
     private Boolean free;
 }
