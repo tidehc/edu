@@ -7,6 +7,9 @@ import com.lyb.edu.query.CourseQuery;
 import com.lyb.edu.vo.CoursePublishVo;
 import com.lyb.edu.vo.CourseVo;
 
+import java.util.List;
+import java.util.Map;
+
 /**
  * <p>
  * 课程 服务类
@@ -63,4 +66,19 @@ public interface CourseService extends IService<Course> {
      * @param id 课程Id
      */
     void publishCourseById(String id);
+
+    /**
+     * 根据讲师id查询讲师的课程列表
+     * @param id 讲师id
+     * @return 课程列表
+     */
+    List<Course> getCourseListByTeacherId(String id);
+
+    /**
+     * 分页查询前台课程列表
+     * @param page 第几页
+     * @param limit 每页几条数据
+     * @return 封装的分页详细对象
+     */
+    Map<String, Object> pageQueryWeb(Long page, Long limit);
 }

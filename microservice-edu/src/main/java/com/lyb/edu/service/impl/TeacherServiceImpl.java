@@ -9,6 +9,7 @@ import com.lyb.edu.mapper.TeacherMapper;
 import com.lyb.edu.query.TeacherQuery;
 import com.lyb.edu.service.TeacherService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.lyb.edu.utils.PageUtil;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
@@ -89,21 +90,11 @@ public class TeacherServiceImpl extends ServiceImpl<TeacherMapper, Teacher> impl
 
         //构造条件查询对象
         QueryWrapper<Teacher> queryWrapper = new QueryWrapper<>();
-        queryWrapper.orderByAsc("sort");
+        queryWrapper.orderByAsc("gmt_modified");
 
         //查询
         baseMapper.selectPage(pageParam, queryWrapper);
 
-        //封装查询数据
-        Map<String,Object> resultMap = new HashMap<>();
-        resultMap.put("items", pageParam.getRecords());
-        resultMap.put("current", pageParam.getCurrent());
-        resultMap.put("pages", pageParam.getPages());
-        resultMap.put("size", pageParam.getSize());
-        resultMap.put("total", pageParam.getTotal());
-        resultMap.put("hasNext",pageParam.hasNext());
-        resultMap.put("hasPrevious", pageParam.hasPrevious());
-
-        return resultMap;
+        return PageUtil.getPageMapOnPageParam(pageParam);
     }
 }

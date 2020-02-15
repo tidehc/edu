@@ -4,10 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.lyb.common.constants.ResultCodeEnum;
 import com.lyb.common.exception.CustomizeException;
-import com.lyb.edu.entity.Chapter;
-import com.lyb.edu.entity.Course;
-import com.lyb.edu.entity.CourseDescription;
-import com.lyb.edu.entity.Video;
+import com.lyb.edu.entity.*;
 import com.lyb.edu.mapper.CourseMapper;
 import com.lyb.edu.query.CourseQuery;
 import com.lyb.edu.service.ChapterService;
@@ -15,12 +12,17 @@ import com.lyb.edu.service.CourseDescriptionService;
 import com.lyb.edu.service.CourseService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.lyb.edu.service.VideoService;
+import com.lyb.edu.utils.PageUtil;
 import com.lyb.edu.vo.CoursePublishVo;
 import com.lyb.edu.vo.CourseVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * <p>
@@ -185,5 +187,38 @@ public class CourseServiceImpl extends ServiceImpl<CourseMapper, Course> impleme
         if(i!=1){
             throw new CustomizeException(ResultCodeEnum.COURSE_NOT_EXIST);
         }
+    }
+
+    @Override
+    public List<Course> getCourseListByTeacherId(String id) {
+
+        //构造查询对象
+        QueryWrapper<Course> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("teacher_id", id);
+        queryWrapper.orderByDesc("gmt_modified");
+
+        return  baseMapper.selectList(queryWrapper);
+
+    }
+
+    @Override
+    public Map<String, Object> pageQueryWeb(Long page, Long limit) {
+
+        //分页参数判断
+        if(page<=0||limit<=0){
+            throw new CustomizeException(ResultCodeEnum.PARAM_ERROR);
+        }
+
+        //构造分页查询对象
+        Page<Course> pageParam = new Page<>(page,limit);
+
+        //构造条件查询对象
+        QueryWrapper<Course> queryWrapper = new QueryWrapper<>();
+        queryWrapper.orderByAsc("gmt_modified");
+
+        baseMapper.selectPage(pageParam, queryWrapper);
+
+        return PageUtil.getPageMapOnPageParam(pageParam);
+
     }
 }
