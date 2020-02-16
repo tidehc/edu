@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.lyb.edu.entity.Course;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.lyb.edu.query.CourseQuery;
+import com.lyb.edu.vo.CourseDetailedVo;
 import com.lyb.edu.vo.CoursePublishVo;
 import com.lyb.edu.vo.CourseVo;
 
@@ -81,4 +82,11 @@ public interface CourseService extends IService<Course> {
      * @return 封装的分页详细对象
      */
     Map<String, Object> pageQueryWeb(Long page, Long limit);
+
+    /**
+     * 查询课程详情信息,包括课程信息和对应的讲师信息
+     * @param courseId 课程Id
+     * @return 课程详情Vo对象
+     */
+    CourseDetailedVo getCourseDetailedVoById(String courseId);
 }

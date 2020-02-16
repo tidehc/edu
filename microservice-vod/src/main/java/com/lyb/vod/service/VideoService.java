@@ -27,4 +27,12 @@ public interface VideoService {
      * @param videoIds 视频Id集合
      */
     void batchRemoveVideoByVideoIds(List<String> videoIdList);
+
+    /**
+     *  根据视频Id获取播放凭证
+     * @param videoId 视频Id
+     * @return 播放凭证
+     */
+    String getVideoPlayAuth(String videoId);
+
 }

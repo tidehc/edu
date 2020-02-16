@@ -14,7 +14,7 @@ import java.util.List;
  * @author liuyoubin
  * @since 2020/1/28 - 17:09
  */
-@Api(description = "阿里云视频点播接口")
+@Api(description = "阿里云视频点播后台管理接口")
 @CrossOrigin
 @RestController
 @RequestMapping("/admin/vod/video")

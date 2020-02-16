@@ -3,11 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="f2439adb-19da-4027-8485-c17493f7692f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework-common/src/main/java/com/lyb/common/constants/ResultCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/framework-common/src/main/java/com/lyb/common/constants/ResultCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/api/WxApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/api/WxApiController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/controller/CourseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/controller/TeacherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/controller/TeacherController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/mapper/CourseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/mapper/CourseMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/mapper/xml/CourseMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/mapper/xml/CourseMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/service/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/service/CourseService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/service/impl/CourseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/service/impl/CourseServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/service/impl/TeacherServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/service/impl/TeacherServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/vo/VideoVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/vo/VideoVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-vod/src/main/java/com/lyb/vod/controller/VideoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-vod/src/main/java/com/lyb/vod/controller/VideoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-vod/src/main/java/com/lyb/vod/controller/admin/VideoAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-vod/src/main/java/com/lyb/vod/controller/admin/VideoAdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-vod/src/main/java/com/lyb/vod/service/VideoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-vod/src/main/java/com/lyb/vod/service/VideoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-vod/src/main/java/com/lyb/vod/service/impl/VideoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-vod/src/main/java/com/lyb/vod/service/impl/VideoServiceImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/framework-parent/target/" />
     <ignored path="$PROJECT_DIR$/framework-common/target/" />
@@ -50,55 +57,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/controller/TeacherController.java">
+        <entry file="file://$PROJECT_DIR$/microservice-vod/src/main/java/com/lyb/vod/controller/admin/VideoAdminController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="46" column="8" lean-forward="true" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/controller/CourseController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="38" column="28" lean-forward="true" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/service/TeacherService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="28" column="4" lean-forward="true" selection-start-line="28" selection-start-column="4" selection-end-line="33" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/service/CourseService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="80" column="24" selection-start-line="80" selection-start-column="24" selection-end-line="80" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/service/impl/CourseServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="220" column="57" lean-forward="true" selection-start-line="220" selection-start-column="8" selection-end-line="220" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/utils/PageUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="20" column="58" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="58" />
+            <state relative-caret-position="-100">
+              <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -107,41 +69,86 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/service/impl/TeacherServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/microservice-vod/src/main/java/com/lyb/vod/controller/VideoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/controller/admin/TeacherAdminController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-624">
-              <caret line="65" column="16" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
+            <state relative-caret-position="394">
+              <caret line="29" column="16" lean-forward="true" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
               <folding>
-                <element signature="e#913#914#0" expanded="true" />
-                <element signature="e#965#966#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/service/ChapterService.java">
+        <entry file="file://$PROJECT_DIR$/microservice-vod/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+            <state relative-caret-position="134">
+              <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/api/WxApiController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-140">
+              <caret line="73" column="7" lean-forward="true" selection-start-line="73" selection-start-column="7" selection-end-line="73" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/mapper/VideoMapper.java">
+        <entry file="file://$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/service/LoginService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="191">
+              <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/service/impl/LoginServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="295">
+              <caret line="160" column="43" lean-forward="true" selection-start-line="160" selection-start-column="43" selection-end-line="160" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/util/JWTUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="443">
+              <caret line="63" column="24" lean-forward="true" selection-start-line="63" selection-start-column="24" selection-end-line="63" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/microsericve-ucenter/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-816" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/microservice-vod/src/main/java/com/lyb/vod/service/impl/VideoServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="145" column="5" lean-forward="true" selection-start-line="145" selection-start-column="5" selection-end-line="145" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/framework-common/src/main/java/com/lyb/common/constants/ResultCodeEnum.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="48" column="4" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -171,12 +178,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/microservice-vod/src/main/java/com/lyb/vod/sdk/UploadVideoDemo.java" />
-        <option value="$PROJECT_DIR$/microservice-vod/src/main/resources/logback-spring.xml" />
-        <option value="$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/constants/WxAppConstants.java" />
-        <option value="$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/api/WxApiController.java" />
-        <option value="$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/service/impl/LoginServiceImpl.java" />
-        <option value="$PROJECT_DIR$/microservice-edu/src/test/java/com/lyb/edu/CodeGenerator.java" />
         <option value="$PROJECT_DIR$/framework-common/pom.xml" />
         <option value="$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/config/Swagger2Config.java" />
         <option value="$PROJECT_DIR$/microservice-vod/src/main/java/com/lyb/vod/config/Swagger2Config.java" />
@@ -193,8 +194,6 @@
         <option value="$PROJECT_DIR$/microservice-oss/src/main/java/com/lyb/aliyunoss/controller/FileController.java" />
         <option value="$PROJECT_DIR$/microservice-statistics/src/main/java/com/lyb/statistics/controller/admin/DailyAdminController.java" />
         <option value="$PROJECT_DIR$/framework-common/src/main/java/com/lyb/common/handler/GlobalExceptionHandler.java" />
-        <option value="$PROJECT_DIR$/framework-common/src/main/java/com/lyb/common/constants/ResultCodeEnum.java" />
-        <option value="$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/vo/VideoVo.java" />
         <option value="$PROJECT_DIR$/microservice-vod/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/microservice-statistics/src/main/java/com/lyb/statistics/client/UcenterClient.java" />
         <option value="$PROJECT_DIR$/microservice-vod/src/main/java/com/lyb/vod/client/VodClient.java" />
@@ -210,18 +209,26 @@
         <option value="$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/mapper/xml/VideoMapper.xml" />
         <option value="$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/util/HttpClientUtils.java" />
         <option value="$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/client/VodClient.java" />
-        <option value="$PROJECT_DIR$/microservice-vod/src/main/java/com/lyb/vod/controller/admin/VideoAdminController.java" />
-        <option value="$PROJECT_DIR$/microservice-vod/src/main/java/com/lyb/vod/service/VideoService.java" />
         <option value="$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/service/impl/VideoServiceImpl.java" />
-        <option value="$PROJECT_DIR$/microservice-vod/src/main/java/com/lyb/vod/service/impl/VideoServiceImpl.java" />
         <option value="$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/controller/admin/TeacherAdminController.java" />
         <option value="$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/service/TeacherService.java" />
         <option value="$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/controller/TeacherController.java" />
         <option value="$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/utils/PageUtil.java" />
-        <option value="$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/service/impl/CourseServiceImpl.java" />
         <option value="$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/service/impl/TeacherServiceImpl.java" />
+        <option value="$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/vo/CourseWebVo.java" />
         <option value="$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/controller/CourseController.java" />
         <option value="$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/service/CourseService.java" />
+        <option value="$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/service/impl/CourseServiceImpl.java" />
+        <option value="$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/mapper/CourseMapper.java" />
+        <option value="$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/vo/CourseDetailedVo.java" />
+        <option value="$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/mapper/xml/CourseMapper.xml" />
+        <option value="$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/vo/VideoVo.java" />
+        <option value="$PROJECT_DIR$/microservice-vod/src/main/java/com/lyb/vod/controller/admin/VideoAdminController.java" />
+        <option value="$PROJECT_DIR$/microservice-vod/src/main/java/com/lyb/vod/controller/VideoController.java" />
+        <option value="$PROJECT_DIR$/microservice-vod/src/main/java/com/lyb/vod/service/VideoService.java" />
+        <option value="$PROJECT_DIR$/framework-common/src/main/java/com/lyb/common/constants/ResultCodeEnum.java" />
+        <option value="$PROJECT_DIR$/microservice-vod/src/main/java/com/lyb/vod/service/impl/VideoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/api/WxApiController.java" />
       </list>
     </option>
   </component>
@@ -273,64 +280,62 @@
             <path>
               <item name="edu" type="b2602c69:ProjectViewProjectNode" />
               <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="microservice-edu" type="462c0819:PsiDirectoryNode" />
+              <item name="microsericve-ucenter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="edu" type="b2602c69:ProjectViewProjectNode" />
               <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="microservice-edu" type="462c0819:PsiDirectoryNode" />
+              <item name="microsericve-ucenter" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="edu" type="b2602c69:ProjectViewProjectNode" />
               <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="microservice-edu" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="microservice-edu" type="462c0819:PsiDirectoryNode" />
+              <item name="microsericve-ucenter" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="edu" type="b2602c69:ProjectViewProjectNode" />
               <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="microservice-edu" type="462c0819:PsiDirectoryNode" />
+              <item name="microsericve-ucenter" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="edu" type="b2602c69:ProjectViewProjectNode" />
               <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="microservice-edu" type="462c0819:PsiDirectoryNode" />
+              <item name="microsericve-ucenter" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="ucenter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="edu" type="b2602c69:ProjectViewProjectNode" />
               <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="microservice-edu" type="462c0819:PsiDirectoryNode" />
+              <item name="microsericve-ucenter" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ucenter" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="edu" type="b2602c69:ProjectViewProjectNode" />
               <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="microsericve-ucenter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -349,7 +354,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -503,6 +508,7 @@
     </configuration>
     <list>
       <item itemvalue="Application.UploadVideoDemo" />
+      <item itemvalue="Application.TeacherController" />
       <item itemvalue="JUnit.Test.test" />
       <item itemvalue="JUnit.Test" />
       <item itemvalue="Spring Boot.StatisticsApplication" />
@@ -512,7 +518,6 @@
       <item itemvalue="Spring Boot.SysUserApplication" />
       <item itemvalue="Spring Boot.UcenterApplication" />
       <item itemvalue="Spring Boot.EurekaServerApplication" />
-      <item itemvalue="Application.TeacherController" />
     </list>
     <recent_temporary>
       <list>
@@ -676,7 +681,8 @@
       <workItem from="1581400110587" duration="4842000" />
       <workItem from="1581489914574" duration="651000" />
       <workItem from="1581671097528" duration="6933000" />
-      <workItem from="1581739128883" duration="4168000" />
+      <workItem from="1581739128883" duration="5424000" />
+      <workItem from="1581837769756" duration="12209000" />
     </task>
     <servers />
   </component>
@@ -713,13 +719,14 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="393211000" />
+    <option name="totallyTimeSpent" value="406676000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Web" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.20520674" visible="true" weight="0.24798928" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.20520674" visible="true" weight="0.25134048" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -742,7 +749,7 @@
       <window_info anchor="bottom" id="Tail" order="13" />
       <window_info anchor="bottom" id="Spring" order="14" weight="0.32923076" />
       <window_info anchor="bottom" id="Java Enterprise" order="15" weight="0.3276923" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="16" sideWeight="0.49865952" visible="true" weight="0.74" />
+      <window_info anchor="bottom" id="Run Dashboard" order="16" sideWeight="0.49865952" weight="0.74" />
       <window_info anchor="bottom" id="JProfiler" order="17" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -799,95 +806,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/microservice-vod/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="92" column="21" selection-start-line="92" selection-start-column="21" selection-end-line="92" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservice-statistics/src/main/java/com/lyb/statistics/StatisticsApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservice-vod/src/main/java/com/lyb/vod/controller/VideoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservice-statistics/src/main/java/com/lyb/statistics/client/UcenterClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservice-vod/src/main/java/com/lyb/vod/VodApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="5" column="67" selection-start-line="5" selection-start-column="67" selection-end-line="5" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/controller/admin/CourseAdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/EduApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/controller/admin/SubjectAdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservice-edu/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="79" column="31" selection-start-line="79" selection-start-column="31" selection-end-line="79" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/mapper/xml/ChapterMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/mapper/xml/CourseDescriptionMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/mapper/xml/SubjectMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/mapper/xml/CourseMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/controller/VideoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/builder/xml/mybatis-3-mapper.dtd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="179" column="8" selection-start-line="179" selection-end-line="179" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-12942">
@@ -965,13 +883,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/util/JWTUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-823">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/util/CookieUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3319">
@@ -1000,16 +911,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/service/impl/ChapterServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="64" column="37" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/service/VideoService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1118">
@@ -1017,47 +918,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/microservice-vod/src/main/java/com/lyb/vod/controller/admin/VideoAdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1274">
-          <caret line="59" column="29" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservice-vod/src/main/java/com/lyb/vod/service/VideoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservice-vod/src/main/java/com/lyb/vod/service/impl/VideoServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2288">
-          <caret line="106" selection-start-line="106" selection-end-line="106" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.m2/repository/com/aliyun/aliyun-java-sdk-vod/2.15.0/aliyun-java-sdk-vod-2.15.0.jar!/com/aliyuncs/vod/model/v20170321/DeleteVideoRequest.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1274">
           <caret line="62" column="28" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/service/impl/VideoServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2600">
-          <caret line="118" column="25" selection-start-line="118" selection-start-column="25" selection-end-line="118" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1082,13 +946,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/framework-common/src/main/java/com/lyb/common/constants/ResultCodeEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/client/VodClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="650">
@@ -1096,13 +953,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/service/ChapterService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -1126,28 +976,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/controller/TeacherController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="46" column="8" lean-forward="true" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="37" />
+        <state relative-caret-position="858">
+          <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/service/TeacherService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="28" column="4" lean-forward="true" selection-start-line="28" selection-start-column="4" selection-end-line="33" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/service/impl/CourseServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="220" column="57" lean-forward="true" selection-start-line="220" selection-start-column="8" selection-end-line="220" selection-end-column="57" />
+        <state relative-caret-position="598">
+          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="33" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/utils/PageUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
+        <state relative-caret-position="416">
           <caret line="20" column="58" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1157,22 +1000,206 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/service/impl/TeacherServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
+        <state relative-caret-position="2106">
+          <caret line="96" selection-start-line="96" selection-end-line="96" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/service/CourseService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="80" column="24" selection-start-line="80" selection-start-column="24" selection-end-line="80" selection-end-column="24" />
+        <state relative-caret-position="342">
+          <caret line="90" column="21" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/mapper/CourseMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="15" column="29" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/mapper/xml/CourseMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="822">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/vo/ChapterVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/vo/CourseDetailedVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-230">
+          <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/vo/CoursePublishVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/vo/SubjectVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/vo/SubjectSecondLevelVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/vo/CourseVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/service/impl/VideoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1330">
+          <caret line="118" column="25" selection-start-line="118" selection-start-column="25" selection-end-line="118" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/service/impl/CourseServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1639">
+          <caret line="232" column="14" lean-forward="true" selection-start-line="232" selection-start-column="14" selection-end-line="232" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/controller/CourseController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="38" column="28" lean-forward="true" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+        <state relative-caret-position="186">
+          <caret line="61" column="73" selection-start-line="61" selection-start-column="73" selection-end-line="61" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/service/ChapterService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/service/impl/ChapterServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="102" column="25" selection-start-line="102" selection-start-column="25" selection-end-line="102" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-edu/src/main/java/com/lyb/edu/vo/VideoVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="26" column="32" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-vod/src/main/java/com/lyb/vod/service/VideoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="33" column="19" lean-forward="true" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-vod/src/main/java/com/lyb/vod/controller/admin/VideoAdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-100">
+          <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-vod/src/main/java/com/lyb/vod/service/impl/VideoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="145" column="5" lean-forward="true" selection-start-line="145" selection-start-column="5" selection-end-line="145" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-vod/src/main/java/com/lyb/vod/controller/VideoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="29" column="16" lean-forward="true" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-vod/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/service/LoginService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microsericve-ucenter/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-816" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-common/src/main/java/com/lyb/common/constants/ResultCodeEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="48" column="4" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/util/JWTUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="63" column="24" lean-forward="true" selection-start-line="63" selection-start-column="24" selection-end-line="63" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/service/impl/LoginServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="160" column="43" lean-forward="true" selection-start-line="160" selection-start-column="43" selection-end-line="160" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microsericve-ucenter/src/main/java/com/lyb/ucenter/api/WxApiController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-140">
+          <caret line="73" column="7" lean-forward="true" selection-start-line="73" selection-start-column="7" selection-end-line="73" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1231,7 +1258,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

@@ -13,6 +13,7 @@ import com.lyb.edu.service.CourseService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.lyb.edu.service.VideoService;
 import com.lyb.edu.utils.PageUtil;
+import com.lyb.edu.vo.CourseDetailedVo;
 import com.lyb.edu.vo.CoursePublishVo;
 import com.lyb.edu.vo.CourseVo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -220,5 +221,16 @@ public class CourseServiceImpl extends ServiceImpl<CourseMapper, Course> impleme
 
         return PageUtil.getPageMapOnPageParam(pageParam);
 
+    }
+
+
+    @Override
+    public CourseDetailedVo getCourseDetailedVoById(String courseId) {
+
+        //更新课程浏览数 TODO通过redis实现
+
+
+        //查询获取
+        return baseMapper.selectCourseDetailedVoById(courseId);
     }
 }

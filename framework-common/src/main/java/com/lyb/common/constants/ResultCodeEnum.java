@@ -41,6 +41,7 @@ public enum ResultCodeEnum {
     VIDEO_UPLOAD_TOMCAT_FAIL(false,51002,"视频上传到服务器失败"),
     VIDEO_UPLOAD_ALIYUN_FAIL(false,51003,"视频上传到阿里云失败"),
     VIDEO_CLIENT_EXCEPTION(false,51004,"获取视频操作客户端失败"),
+    FETCH_PLAY_AUTH_FAIL(false,51005,"获取视频播放凭证失败"),
 
     ILLEGAL_CALLBACK_REQUEST_ERROR(false,61001,"非法回调请求错误"),
     FETCH_ACCESS_TOKEN_FAIL(false,61012,"获取AccessToken失败"),
