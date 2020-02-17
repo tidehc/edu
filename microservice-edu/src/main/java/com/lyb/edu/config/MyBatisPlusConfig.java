@@ -14,7 +14,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  * @since 2019/11/8 - 21:56
  */
 @Configuration
-@EnableTransactionManagement
 @MapperScan("com.lyb.edu.mapper")
 public class MyBatisPlusConfig {
     /**

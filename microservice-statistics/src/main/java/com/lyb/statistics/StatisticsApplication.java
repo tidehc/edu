@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 /**
  * @author liuyoubin
@@ -13,7 +14,8 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication
 @EnableEurekaClient
 @EnableFeignClients
-@ComponentScan({"com.lyb.common","com.lyb.statistics"})
+@EnableTransactionManagement
+@ComponentScan(basePackages = {"com.lyb.statistics","com.lyb.common"})
 public class StatisticsApplication {
     public static void main(String[] args) {
         SpringApplication.run(StatisticsApplication.class, args);

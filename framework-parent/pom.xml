@@ -13,7 +13,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>framework-parent</name>
     <packaging>pom</packaging>
-    <description>优彬学院父项目</description>
+    <description>在线教育后台系统父项目</description>
 
     <properties>
         <java.version>1.8</java.version>

@@ -1,18 +1,20 @@
-package com.lyb.aliyunoss;
+package com.lyb.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
 /**
  * @author liuyoubin
- * @since 2019/11/19 - 23:51
+ * @since 2020/2/17 - 12:05
  */
-@EnableEurekaClient
 @SpringBootApplication
-public class AliyunOssApplication {
+@EnableEurekaClient
+@EnableZuulProxy
+public class ApiGateWayApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(AliyunOssApplication.class,args);
+        SpringApplication.run(ApiGateWayApplication.class, args);
     }
 }

@@ -7,13 +7,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="microserivce-eureka" />
-        <module name="microservice-oss" />
-        <module name="microservice-sysuser" />
-        <module name="microsericve-ucenter" />
-        <module name="microservice-vod" />
-        <module name="framework-common" />
         <module name="microservice-edu" />
+        <module name="microservice-gateway" />
+        <module name="microservice-statistics" />
+        <module name="microservice-oss" />
+        <module name="microsericve-ucenter" />
+        <module name="framework-common" />
+        <module name="microservice-sysuser" />
+        <module name="microserivce-eureka" />
+        <module name="microservice-vod" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -23,6 +25,7 @@
       <module name="microsericve-ucenter" target="1.8" />
       <module name="microserivce-eureka" target="1.8" />
       <module name="microservice-edu" target="1.8" />
+      <module name="microservice-gateway" target="1.8" />
       <module name="microservice-oss" target="1.8" />
       <module name="microservice-statistics" target="1.8" />
       <module name="microservice-sysuser" target="1.8" />
@@ -37,6 +40,7 @@
       <module name="microsericve-ucenter" options="-parameters" />
       <module name="microserivce-eureka" options="-parameters" />
       <module name="microservice-edu" options="-parameters" />
+      <module name="microservice-gateway" options="-parameters" />
       <module name="microservice-oss" options="-parameters" />
       <module name="microservice-statistics" options="-parameters" />
       <module name="microservice-sysuser" options="-parameters" />

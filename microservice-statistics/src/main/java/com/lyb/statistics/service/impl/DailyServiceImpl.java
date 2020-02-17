@@ -10,6 +10,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.apache.commons.lang3.RandomUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -40,6 +41,7 @@ public class DailyServiceImpl extends ServiceImpl<DailyMapper, Daily> implements
      *
      * @param day 指定日期
      */
+    @Transactional
     @Override
     public void createStatisticsInfoByDay(String day) {
 
@@ -54,7 +56,7 @@ public class DailyServiceImpl extends ServiceImpl<DailyMapper, Daily> implements
         Integer videoViewNum = RandomUtils.nextInt(100, 200);//TODO
         Integer courseNum  = RandomUtils.nextInt(100, 200);//TODO
 
-        //创建统计对象 TODO
+        //创建统计对象
         Daily daily = new Daily()
                 .setRegisterNum(registerNum)
                 .setLoginNum(loginNum)
@@ -62,9 +64,8 @@ public class DailyServiceImpl extends ServiceImpl<DailyMapper, Daily> implements
                 .setCourseNum(courseNum)
                 .setDateCalculated(day);;
 
-        //保存统计信息 TODO
+        //保存统计信息
         baseMapper.insert(daily);
-
 
     }
 
